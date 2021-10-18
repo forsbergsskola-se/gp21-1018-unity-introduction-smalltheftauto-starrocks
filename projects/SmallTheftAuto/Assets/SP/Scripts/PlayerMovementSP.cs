@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class PlayerMovementSP : MonoBehaviour
 {
+    [SerializeField] private float _speed;
+    [SerializeField] private float _rotationSpeed;
+    
     void Update()
     {
-      if(Input.GetKey(KeyCode.W)) transform.Translate(0f, 0.01f, 0); 
-      if(Input.GetKey(KeyCode.S)) transform.Translate(0f, -0.01f, 0);
-      if (Input.GetKey(KeyCode.A)) transform.Rotate(0f,0f, 0.1f);
-      if (Input.GetKey(KeyCode.D)) transform.Rotate(0f,0f, -0.1f);
-      
+        float translation = Input.GetAxis("Vertical") * Time.deltaTime * _speed;
+        float rotation = Input.GetAxis("Horizontal") * Time.deltaTime * _rotationSpeed;
+
+        transform.Translate(0f, translation, 0f);
+        transform.Rotate(0f,0f,-rotation);
     }
 }
