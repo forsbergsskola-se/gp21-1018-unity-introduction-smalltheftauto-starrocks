@@ -18,16 +18,13 @@ public class CarFK : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        EnterCar(player.gameObject.active);
+        if (Input.GetKeyDown(KeyCode.E)) EnterExitCar(player.gameObject.active);
     }
 
-    void EnterCar(bool isPlayerActive)
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            _carMovementFk.enabled = isPlayerActive;
-            player.gameObject.SetActive(!isPlayerActive);
-        }
+    void EnterExitCar(bool isPlayerActive)
+    { 
+        _carMovementFk.enabled = isPlayerActive;
+        player.gameObject.SetActive(!isPlayerActive);
     }
     
 // When I enter a car:
