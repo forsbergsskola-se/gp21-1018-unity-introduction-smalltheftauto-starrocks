@@ -17,7 +17,7 @@ public class PlayerMovementBT : MonoBehaviour
     void Update() {
 	    transform.Translate(0f, 5f * Time.deltaTime * Input.GetAxis("Vertical"), 0f);
 	    transform.Translate(5f * Time.deltaTime * Input.GetAxis("Horizontal"), 0f, 0f);
-	    transform.Rotate(0f, 0f, -180f * Time.deltaTime * Input.GetAxis("Rotate"));
+	    // transform.Rotate(0f, 0f, -180f * Time.deltaTime * Input.GetAxis("Rotate"));
 	    // transform.Rotate(0f, 0f, -180f*Time.deltaTime*Input.GetAxis("Rotate2"));
 	    
 	    Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
