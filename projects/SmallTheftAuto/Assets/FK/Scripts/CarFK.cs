@@ -18,13 +18,14 @@ public class CarFK : MonoBehaviour
     void Update()
     {
         float distance = DistanceToNearestCar();
-        if (Input.GetKeyDown(KeyCode.E)&&distance <= minDistanceToEnterCar) EnterExitCar(player.gameObject.active);
+        if (Input.GetKeyDown(KeyCode.E)&&distance <= minDistanceToEnterCar) EnterExitCar(player.active);
     }
 
     void EnterExitCar(bool isPlayerActive)
     { 
         carMovementFk.enabled = isPlayerActive;
-        player.gameObject.SetActive(!isPlayerActive);
+        player.SetActive(!isPlayerActive);
+        player.transform.position = transform.position + new Vector3(-2,0, 0);
     }
 
     float DistanceToNearestCar()
