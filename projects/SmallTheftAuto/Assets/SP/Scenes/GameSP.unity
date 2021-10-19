@@ -563,6 +563,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1817586230}
+    - target: {fileID: 6959195553128075254, guid: 112d0fc331086ef43900595e2c6e828f, type: 3}
+      propertyPath: distanceToActivate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7928725872740227704, guid: 112d0fc331086ef43900595e2c6e828f, type: 3}
       propertyPath: m_Name
       value: Car
