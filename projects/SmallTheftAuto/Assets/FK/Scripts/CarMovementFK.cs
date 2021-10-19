@@ -1,11 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Data;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class PlayerMovementFK : MonoBehaviour
+public class CarMovementFK : MonoBehaviour
 {
     [SerializeField][Range(1f,30f)] float moveSpeed;
     [SerializeField][Range(60f,250f)] float rotationSpeed;
