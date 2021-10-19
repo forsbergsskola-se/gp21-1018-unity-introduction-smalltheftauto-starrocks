@@ -16,7 +16,7 @@ public class VehicleSS : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Input.GetButton("Interact-Vehicle"));
+        
         if (Input.GetButtonDown("Interact-Vehicle"))
         {
             
