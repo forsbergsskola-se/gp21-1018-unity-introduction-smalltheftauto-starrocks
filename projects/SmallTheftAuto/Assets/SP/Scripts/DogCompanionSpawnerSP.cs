@@ -9,12 +9,12 @@ public class DogCompanionSpawnerSP : MonoBehaviour
     
     private GameObject dogInstance;
     
-    private void Start()
+    private void OnEnable()
     {
         dogInstance = Instantiate(dogPrefab);
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         Destroy(dogInstance);
     }
