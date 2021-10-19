@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -11,6 +12,11 @@ public class PlayerMovementFK : MonoBehaviour
     void Update()
     {
         Move();
+    }
+
+    private void OnEnable()
+    {
+        
     }
 
     void Move()
