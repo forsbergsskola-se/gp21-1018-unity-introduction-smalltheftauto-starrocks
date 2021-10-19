@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 public class CarFK : MonoBehaviour
 {
     [SerializeField] GameObject player;
-    [SerializeField] private float minDistanceToEnterCar = 5f;
+    [SerializeField][Range(0.1f, 100f)] private float minDistanceToEnterCar = 5f;
     CarMovementFK carMovementFk;
     
     void Start()
