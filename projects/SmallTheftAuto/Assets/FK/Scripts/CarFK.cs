@@ -26,7 +26,7 @@ public class CarFK : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             player.SetActive(false);
-            _carMovementFk.enabled = true;
+            _carMovementFk.enabled =  !player.gameObject.active;
         }
     }
     
