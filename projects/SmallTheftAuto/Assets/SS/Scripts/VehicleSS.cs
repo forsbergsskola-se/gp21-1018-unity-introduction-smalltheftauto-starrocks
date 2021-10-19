@@ -5,8 +5,8 @@ using UnityEngine;
 public class VehicleSS : MonoBehaviour
 {
     public GameObject player;
-
     public CarMovementSS carMovementSS;
+    private float maxDistanceToEnterCar=15f;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,11 @@ public class VehicleSS : MonoBehaviour
             }
             else
             {
-                EnterCar();
+                if (Vector3.Distance(transform.position, player.transform.position) < maxDistanceToEnterCar)
+                {
+                    EnterCar();
+                }
+                
             }
         }
     }
