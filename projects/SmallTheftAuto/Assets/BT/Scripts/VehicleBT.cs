@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class VehicleBT : MonoBehaviour {
-    GameObject player;
-    CarMovementBT carMovement;
-    VehicleBT vehicle;
+    public GameObject player;
+    public CarMovementBT carMovement;
+    public VehicleBT vehicle;
+    [SerializeField][Range(0.1f, 100f)] private float minVehicleDistance = 3f;
     void Update()
     { 
-        bool PlayerIsInCar = player.activeInHierarchy;
-        bool CarIsInRange = (Vector3.Distance(transform.position, player.transform.position)) < 10;
+        bool playerIsInVehicle = !player.activeInHierarchy;
+        bool vehicleInRange = minVehicleDistance > Vector3.Distance(transform.position, player.transform.position);
 
         if (Input.GetKeyDown(KeyCode.E)) {
-            if (PlayerIsInCar) {
+            if (playerIsInVehicle) {
                 LeaveCar();
             }
-            else if (!PlayerIsInCar && CarIsInRange) {
+            else if (!playerIsInVehicle && vehicleInRange) {
                 EnterCar();
             }
         }
@@ -28,6 +29,5 @@ public class VehicleBT : MonoBehaviour {
             player.SetActive(false);
             carMovement.enabled = true;
         }
-
     }
 }
