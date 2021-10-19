@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraMotion : MonoBehaviour {
+public class CameraMotionBT : MonoBehaviour {
     private Quaternion myRotation;
     // Start is called before the first frame update
     void Start()
