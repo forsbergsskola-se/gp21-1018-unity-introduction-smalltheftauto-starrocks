@@ -11,8 +11,9 @@ public class VehicleBT : MonoBehaviour {
     { 
         bool playerIsInVehicle = !player.activeInHierarchy;
         bool vehicleInRange = minVehicleDistance > Vector3.Distance(transform.position, player.transform.position);
-
-        if (Input.GetKeyDown(KeyCode.E)) {
+        bool vehicleInteracted = Input.GetKeyDown(KeyCode.E);
+        
+        if (vehicleInteracted) {
             if (playerIsInVehicle) {
                 LeaveCar();
             }
