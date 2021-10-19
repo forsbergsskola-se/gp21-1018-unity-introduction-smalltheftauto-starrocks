@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class CarFK : MonoBehaviour
 {
     [SerializeField] GameObject player;
-    public CarMovementFK _carMovementFk;
-    private bool isInCar = false;
-    
+    public CarMovementFK carMovementFk;
     
     // Start is called before the first frame update
     void Start()
     {
-        _carMovementFk.enabled = false;
+        carMovementFk.enabled = false;
     }
 
     // Update is called once per frame
@@ -23,7 +22,7 @@ public class CarFK : MonoBehaviour
 
     void EnterExitCar(bool isPlayerActive)
     { 
-        _carMovementFk.enabled = isPlayerActive;
+        carMovementFk.enabled = isPlayerActive;
         player.gameObject.SetActive(!isPlayerActive);
     }
     
