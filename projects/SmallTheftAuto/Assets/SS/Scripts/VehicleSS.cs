@@ -18,18 +18,35 @@ public class VehicleSS : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            Debug.Log(player.activeInHierarchy);
-            if (player.activeInHierarchy)
+            
+            if (PlayerIsInCar())
             {
-                player.SetActive(false);
-                carMovementSS.enabled = true;
+                LeaveCar();
             }
-            else if (!player.activeInHierarchy)
+            else
             {
-                player.transform.position = transform.position;
-                player.SetActive(true);
-                carMovementSS.enabled = false;
+                EnterCar();
             }
         }
+    }
+
+    private void LeaveCar()
+    {
+        player.transform.position = transform.position;
+        player.SetActive(true);
+        carMovementSS.enabled = false;
+    }
+
+    private void EnterCar()
+    {
+        
+        
+        player.SetActive(false);
+        carMovementSS.enabled = true;
+    }
+
+    private bool PlayerIsInCar()
+    {
+        return !player.activeInHierarchy;
     }
 }
