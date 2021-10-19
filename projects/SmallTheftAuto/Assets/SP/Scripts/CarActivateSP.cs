@@ -18,12 +18,12 @@ public class CarActivateSP : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, player.transform.position);
 
-        if (Input.GetKeyDown(KeyCode.E) && distance <= distanceToActivate) EnterExitCar(player.active);
+        if (Input.GetKeyDown(KeyCode.E) && distance <= distanceToActivate) InteractPlayer(player.active);
         
         if (!player.active) player.transform.position = transform.position;
     }
 
-    private void EnterExitCar(bool isPlayerActive)
+    private void InteractPlayer(bool isPlayerActive)
     {
         _playerMovement.enabled = isPlayerActive;
         player.SetActive(!isPlayerActive);
