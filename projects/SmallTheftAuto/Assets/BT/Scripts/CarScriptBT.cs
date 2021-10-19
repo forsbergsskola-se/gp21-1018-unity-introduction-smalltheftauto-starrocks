@@ -18,10 +18,10 @@ public class CarScriptBT : MonoBehaviour
 	void Update()
 	{
 		float distance = DistanceToNearestCar();
-		if (Input.GetKeyDown(KeyCode.E)&&distance <= minDistanceToEnterCar) EnterExitCar(player.gameObject.active);
+		if (Input.GetKeyDown(KeyCode.E)&&distance <= minDistanceToEnterCar) EnterCar(player.gameObject.active);
 	}
 
-	void EnterExitCar(bool isPlayerActive)
+	void EnterCar(bool isPlayerActive)
 	{ 
 		carMovementBT.enabled = isPlayerActive;
 		player.gameObject.SetActive(!isPlayerActive);
