@@ -14,7 +14,6 @@ public class CarFK : MonoBehaviour
     {
         carMovementFk = GetComponent<CarMovementFK>();
         carMovementFk.enabled = false;
-        
     }
     
     void Update()
