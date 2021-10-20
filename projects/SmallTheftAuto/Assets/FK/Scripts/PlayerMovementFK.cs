@@ -21,9 +21,9 @@ public class PlayerMovementFK : MonoBehaviour
 
     void Update() {
         
-        //transform.Translate(0f, moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"), 0f); //TODO /2 when going backwards
+        transform.Translate(0f, moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"), 0f); //TODO /2 when going backwards
         transform.Translate( moveSpeed * Time.deltaTime * Input.GetAxis("Horizontal"), 0f, 0f);
-        Move();
+        //Move();
         // transform.Rotate(0f, 0f, -180f * Time.deltaTime * Input.GetAxis("Rotate"));
         // transform.Rotate(0f, 0f, -180f*Time.deltaTime*Input.GetAxis("Rotate2"));
 	    
