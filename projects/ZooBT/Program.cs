@@ -2,57 +2,64 @@
 
 namespace ZooBT
 {
-    class Animal {
-        
-    }
-    class Mammal : Animal {
-        
-    }
-    class Bear : Mammal {
-        
-    }
-    class Donkey : Mammal {
-        
-    }
-    class Lion : Mammal {
-        
-    }
-    class Fish : Animal {
-        
-    }
-    class Salmon : Fish {
-        
-    }
-    class Clownfish : Fish {
-        
-    }
-    class Student {
-        
-    }
-    class FishZoo <creature> where creature : Fish {
-        public void Activate(creature Salmon) {
-           
-        }
-    }
-    class MamalZoo <creature> where creature : Mammal  {
-        public void Activate(creature Lion) {
-            
-        }
-    }
-    class DonkeyZoo <creature> where creature : Donkey{
-        public void Activate(creature Donkey) {
-            
-        }
-    }
-
-    class Program
+	class Program
     {
-        public void AddAnimal() {
-                
-        }
-        static void Main(string[] args)
-        {
+	    class Animal {
+        
+	    }
+	    class Mammal : Animal {
+        
+	    }
+	    class Bear : Mammal {
+        
+	    }
+	    class Donkey : Mammal {
+        
+	    }
+	    class Lion : Mammal {
+        
+	    }
+	    class Fish : Animal {
+        
+	    }
+	    class Salmon : Fish {
+        
+	    }
+	    class Clownfish : Fish {
+        
+	    }
+	    class Student {
+        
+	    }
+	    class Zoo <TCreature> where TCreature : Animal, new() {
+		    private TCreature[] animals;
 
+		    public void Oversize() {
+			    Array.Resize(ref animals, animals.Length + 1);
+		    }
+		    public TCreature AddAnimal<TCreature> (TCreature animal) where TCreature : Animal, new () {
+			    animal = new TCreature();
+			    return animal;
+		    }
+		    public bool HasAnimal<TCreature>() {
+			    return false;
+		    }
+	    }
+
+	    static void Main(string[] args)
+        {
+	        {
+		        Zoo<Fish> fishZoo = new Zoo<Fish>();
+		        fishZoo.AddAnimal(new Fish()); // OKAY
+		        fishZoo.AddAnimal(new Clownfish()); // OKAY
+	        }
+	        {
+		        Zoo<Animal> animalZoo = new Zoo<Animal>();
+		        animalZoo.AddAnimal(new Fish()); // OKAY
+		        animalZoo.AddAnimal(new Clownfish()); // OKAY
+		        animalZoo.AddAnimal(new Lion()); // OKAY
+		        animalZoo.AddAnimal(new Donkey()); // OKAY
+	        }
         }
     }
 }
