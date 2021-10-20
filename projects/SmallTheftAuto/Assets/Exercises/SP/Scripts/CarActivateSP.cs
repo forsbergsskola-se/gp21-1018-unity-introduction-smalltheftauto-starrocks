@@ -10,17 +10,14 @@ public class CarActivateSP : MonoBehaviour
     private void Update()
     {
         float distance = Vector3.Distance(transform.position, player.transform.position);
-
-        if (Input.GetKey(KeyCode.E) && distance <= distanceToActivate)
-        {
-            player.gameObject.SetActive(false);
-            this.gameObject.GetComponent<PlayerMovementSP>().enabled = true;
-        }
-
-        if (Input.GetKey(KeyCode.E) && !player.gameObject.active)
-        {
-            player.gameObject.SetActive(true);
-            this.gameObject.GetComponent<PlayerMovementSP>().enabled = false;
-        }
+        
+        if (Input.GetKeyDown(KeyCode.E) && distance <= distanceToActivate) InteractPlayer(player.activeInHierarchy);
+        if (!player.activeInHierarchy) player.transform.position = transform.position;
+    }
+    
+    void InteractPlayer(bool isPlayerActive)
+    { 
+        GetComponent<PlayerMovementSP>().enabled = isPlayerActive;
+        player.SetActive(!isPlayerActive);
     }
 }
