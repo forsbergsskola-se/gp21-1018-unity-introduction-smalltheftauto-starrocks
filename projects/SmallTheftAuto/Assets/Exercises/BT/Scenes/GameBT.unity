@@ -2884,7 +2884,7 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 1
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
   m_FocalLength: 50
@@ -2897,8 +2897,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 88.50715
-  orthographic: 0
-  orthographic size: 10
+  orthographic: 1
+  orthographic size: 15
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -2941,8 +2941,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carMovement: {fileID: 1406254231}
-  cameraFollowVehicleBT: {fileID: 1997598750}
-  cameraFollowPlayerBT: {fileID: 1997598749}
 --- !u!114 &1997598749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2957,8 +2955,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 1712329231}
   camTransform: {fileID: 1997598747}
-  Offset: {x: 0.5, y: 0.5, z: 0.5}
-  SmoothTime: 0.2
+  Offset: {x: 0, y: 0, z: 0}
+  SmoothTime: 0.1
 --- !u!114 &1997598750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2973,8 +2971,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 1406254233}
   camTransform: {fileID: 1997598747}
-  Offset: {x: 0.5, y: 0.5, z: 0.5}
-  SmoothTime: 0.2
+  Offset: {x: 0, y: 0, z: 0}
+  SmoothTime: 0.1
 --- !u!4 &2045827839 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8768983988462335854, guid: a69b0ad545d85be419bfc4210164bd13, type: 3}
