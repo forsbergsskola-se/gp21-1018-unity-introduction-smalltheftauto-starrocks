@@ -16,7 +16,6 @@ public class PlayerMovementBT : MonoBehaviour {
 	    float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 	    if (dir == player.transform.position) {
 		    transform.rotation = Quaternion.AngleAxis(angle - 0f, Vector3.forward);
-
 	    }
 	    else {
 		    transform.rotation = Quaternion.AngleAxis(angle - 90f, Vector3.forward);
