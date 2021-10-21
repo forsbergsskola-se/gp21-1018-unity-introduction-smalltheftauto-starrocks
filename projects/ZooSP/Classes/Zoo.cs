@@ -27,7 +27,7 @@ namespace ZooSP.Classes
         {
             for (int i = 0; i < _zooPopulation.Count; i++)
             {
-                if (typeof(TSpecies) == _zooPopulation[i].GetType())
+                if (_zooPopulation[i] is TSpecies)
                 {
                     return true;
                 }
