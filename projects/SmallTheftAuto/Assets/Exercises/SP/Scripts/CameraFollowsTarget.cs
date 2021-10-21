@@ -9,6 +9,6 @@ public class CameraFollowsTarget : MonoBehaviour
     void Update()
     {
         Vector3 targetPosition = new Vector3(player.position.x, player.position.y, this.transform.position.z);
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, 0.01f);
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, 0.03f);
     }
 }
