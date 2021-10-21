@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ZooBT {
 	class Program {
@@ -13,14 +14,17 @@ namespace ZooBT {
 	    class Student {}
 	    
 	    class Zoo <TAnimal> where TAnimal : Animal, new() {
-		    TAnimal[] animals = new TAnimal[0];
+		    private List<TAnimal> animals = new List<TAnimal>();
 
 		    public void AddAnimal(TAnimal animal) {
-			    Array.Resize(ref animals, animals.Length + 1);
-			    animals[animals.Length - 1] = animal;
+			    this.animals.Add(animal);
+
+			    for (int i = 0; i < this.animals.Count; i++) {
+				    Console.WriteLine(this.animals[i]);
+			    }
 		    }
 		    
-		    public bool HasAnimal<TSoecies>() where TSoecies : TAnimal{
+		    public bool HasAnimal<TSpecies>() where TSpecies : TAnimal{
 			    throw new NotImplementedException();
 		    }
 	    }
