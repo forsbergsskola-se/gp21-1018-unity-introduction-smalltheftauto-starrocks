@@ -1,6 +1,6 @@
 ﻿namespace ZooSP.Classes
 {
-    public class Fish : Animal
+    public abstract class Fish : Animal
     {
         
     }

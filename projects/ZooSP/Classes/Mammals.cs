@@ -1,7 +1,7 @@
 ﻿namespace ZooSP.Classes
 {
-    public class Mammals : Animal
+    public abstract class Mammals : Animal
     {
-        
+      
     }
 }

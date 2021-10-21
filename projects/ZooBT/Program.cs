@@ -1,58 +1,74 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace ZooBT
-{
-    class Animal {
-        
-    }
-    class Mammal : Animal {
-        
-    }
-    class Bear : Mammal {
-        
-    }
-    class Donkey : Mammal {
-        
-    }
-    class Lion : Mammal {
-        
-    }
-    class Fish : Animal {
-        
-    }
-    class Salmon : Fish {
-        
-    }
-    class Clownfish : Fish {
-        
-    }
-    class Student {
-        
-    }
-    class FishZoo <creature> where creature : Fish {
-        public void Activate(creature Salmon) {
-           
-        }
-    }
-    class MamalZoo <creature> where creature : Mammal  {
-        public void Activate(creature Lion) {
-            
-        }
-    }
-    class DonkeyZoo <creature> where creature : Donkey{
-        public void Activate(creature Donkey) {
-            
-        }
-    }
+namespace ZooBT {
+	class Program {
+	    class Animal {}
+	    class Mammal : Animal {}
+	    class Bear : Mammal {}
+	    class Donkey : Mammal {}
+	    class Lion : Mammal {}
+	    class Fish : Animal {}
+	    class Salmon : Fish {}
+	    class Clownfish : Fish {}
+	    class Student {}
+	    
+	    class Zoo <TAnimal> where TAnimal : Animal, new() {
+		    private List<TAnimal> animals = new List<TAnimal>();
 
-    class Program
-    {
-        public void AddAnimal() {
-                
-        }
-        static void Main(string[] args)
-        {
+		    public void AddAnimal(TAnimal animal) {
+			    this.animals.Add(animal);
 
+			    for (int i = 0; i < this.animals.Count; i++) {
+				    Console.WriteLine(this.animals[i]);
+			    }
+		    }
+		    
+		    public bool HasAnimal<TSpecies>() where TSpecies : TAnimal{
+			    throw new NotImplementedException();
+		    }
+	    }
+
+	    static void Main(string[] args) {
+	        {
+		        Zoo<Fish> fishZoo = new Zoo<Fish>();
+		        fishZoo.AddAnimal(new Fish()); // OKAY
+		        fishZoo.AddAnimal(new Clownfish()); // OKAY
+	        }
+	        {
+		        Zoo<Animal> animalZoo = new Zoo<Animal>();
+		        animalZoo.AddAnimal(new Fish()); // OKAY
+		        animalZoo.AddAnimal(new Clownfish()); // OKAY
+		        animalZoo.AddAnimal(new Lion()); // OKAY
+		        animalZoo.AddAnimal(new Donkey()); // OKAY
+	        }
+	        {
+		        Zoo<Lion> lionZoo = new Zoo<Lion>();
+		        lionZoo.AddAnimal(new Lion()); // OKAY
+		        lionZoo.AddAnimal(new Lion()); // OKAY
+		        lionZoo.AddAnimal(new Lion()); // OKAY
+	        }
+	        // {
+		       //  Zoo<Student> studentZoo = new StudentZoo(); // ERROR!
+	        // }
+	        // {  
+		       //  Zoo<Fish> fishZoo = new Zoo<Fish>();
+		       //  fishZoo.AddAnimal(new Lion()); // ERROR!
+	        // }
+	        // {
+		       //  Zoo<Salmon> salmonZoo = new Zoo<Salmon>();
+		       //  salmonZoo.AddAnimal(new Fish()); // ERROR!
+	        // }
+	        // {
+		       //  Zoo<Salmon> salmonZoo = new Zoo<Salmon>();
+		       //  salmonZoo.HasAnimal<Lion>(); // ERROR!
+	        // }
+	        {
+		        Zoo<Fish> fishZoo = new Zoo<Fish>();
+		        fishZoo.AddAnimal(new Salmon());
+		        fishZoo.AddAnimal(new Salmon());
+		        Console.WriteLine("This should be False: "+fishZoo.HasAnimal<Clownfish>());
+	        }
         }
     }
 }
