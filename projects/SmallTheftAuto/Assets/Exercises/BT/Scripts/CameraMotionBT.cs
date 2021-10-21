@@ -20,7 +20,7 @@ public class CameraMotionBT : MonoBehaviour {
     }
     void CameraFollowPlayer() {
         Vector3 targetPosition = player.position + offset;
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, 0.02f);
+        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
     }
     void CameraFollowVehicle() {
         Vector3 targetPosition = vehicle.position + offset;
