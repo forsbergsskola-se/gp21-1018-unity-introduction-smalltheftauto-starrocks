@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     void PlayerMove()
     {
-        transform.Translate(0f, moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"), 0f);
-        transform.Rotate(0f,0f,rotateSpeed * Time.deltaTime * Input.GetAxis("Horizontal"));
+        transform.Translate(0f, 0f,moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"));
+        transform.Rotate(0f,rotateSpeed * Time.deltaTime * Input.GetAxis("Horizontal"), 0f);
     }
 }
