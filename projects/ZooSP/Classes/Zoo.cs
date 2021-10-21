@@ -4,28 +4,36 @@ using System.Runtime.InteropServices;
 
 namespace ZooSP.Classes
 {
-    public class Zoo<T>
+    public class Zoo<TAnimal> where TAnimal : Animal
     {
-        public T typeOfAnimals { get; set; }
-        
-        private List<T> zooPopulation = new List<T>();
+        private List<TAnimal> _zooPopulation = new();
 
-        public void AddAnimal(T animal)
+        public void AddAnimal(TAnimal animal)
         {
-            zooPopulation.Add(animal);
+            _zooPopulation.Add(animal);
             Console.WriteLine(animal + " has been added to the zoo.");
         }
 
         public void PrintOutZooInhabitants()
         {
-            foreach (var inhabitant in zooPopulation)
+            foreach (var inhabitant in _zooPopulation)
             {
                 Console.WriteLine(inhabitant);
             }
         }
-        
-        
 
-        
+        // This method has it's own constrains
+        public bool HasAnimal<TSpecies>() where TSpecies : TAnimal
+        {
+            for (int i = 0; i < _zooPopulation.Count; i++)
+            {
+                if (typeof(TSpecies) == _zooPopulation[i].GetType())
+                {
+                    return true;
+                }
+            }
+            
+            return false;
+        }
     }
 }
