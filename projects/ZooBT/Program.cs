@@ -77,13 +77,13 @@ namespace ZooBT {
 		        fishZoo.AddAnimal(new Salmon());
 		        Console.WriteLine("This should be True: "+fishZoo.HasAnimal<Clownfish>());
 	        }
-	        {
-		        Zoo<Animal> animalZoo = new Zoo<Fish>();
-		        animalZoo.AddAnimal(new Salmon());
-		        animalZoo.AddAnimal(new Lion());
-		        animalZoo.AddAnimal(new Donkey());
-		        Console.WriteLine("This should be True: "+animalZoo.HasAnimal<Fish>());
-	        }
+	        // {
+		       //  Zoo<Animal> animalZoo = new Zoo<Fish>();
+		       //  animalZoo.AddAnimal(new Salmon());
+		       //  animalZoo.AddAnimal(new Lion());
+		       //  animalZoo.AddAnimal(new Donkey());
+		       //  Console.WriteLine("This should be True: "+animalZoo.HasAnimal<Fish>());
+	        // }
         }
     }
 }
