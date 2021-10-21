@@ -22,7 +22,7 @@ namespace ZooBT {
 		    
 		    public bool HasAnimal<TSpecies>() where TSpecies : TAnimal{
 			    for (int i = 0; i < animals.Count; i++) {
-				    if (typeof(TSpecies) == animals[i].GetType()) {
+				    if (this.animals[i] is TSpecies) {
 					    return true;
 				    }
 			    }
