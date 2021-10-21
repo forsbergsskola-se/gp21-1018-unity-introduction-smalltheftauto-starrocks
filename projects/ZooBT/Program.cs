@@ -18,14 +18,15 @@ namespace ZooBT {
 
 		    public void AddAnimal(TAnimal animal) {
 			    this.animals.Add(animal);
-
-			    for (int i = 0; i < this.animals.Count; i++) {
-				    Console.WriteLine(this.animals[i]);
-			    }
 		    }
 		    
 		    public bool HasAnimal<TSpecies>() where TSpecies : TAnimal{
-			    throw new NotImplementedException();
+			    for (int i = 0; i < animals.Count; i++) {
+				    if (typeof(TSpecies) == animals[i].GetType()) {
+					    return true;
+				    }
+			    }
+			    return false;
 		    }
 	    }
 
@@ -68,6 +69,20 @@ namespace ZooBT {
 		        fishZoo.AddAnimal(new Salmon());
 		        fishZoo.AddAnimal(new Salmon());
 		        Console.WriteLine("This should be False: "+fishZoo.HasAnimal<Clownfish>());
+	        }
+	        {
+		        Zoo<Fish> fishZoo = new Zoo<Fish>();
+		        fishZoo.AddAnimal(new Salmon());
+		        fishZoo.AddAnimal(new Clownfish());
+		        fishZoo.AddAnimal(new Salmon());
+		        Console.WriteLine("This should be True: "+fishZoo.HasAnimal<Clownfish>());
+	        }
+	        {
+		        Zoo<Animal> animalZoo = new Zoo<Fish>();
+		        animalZoo.AddAnimal(new Salmon());
+		        animalZoo.AddAnimal(new Lion());
+		        animalZoo.AddAnimal(new Donkey());
+		        Console.WriteLine("This should be True: "+animalZoo.HasAnimal<Fish>());
 	        }
         }
     }
