@@ -26,7 +26,13 @@ namespace ZooFK
         fishZoo.AddAnimal(new Fish());
         
         Console.WriteLine(fishZoo.HasAnimal<Fish>());
-        Console.WriteLine(fishZoo.HasAnimal<Donkey>());
+        
+        
+        Zoo<Animal> animalZoo = new Zoo<Animal>();
+        animalZoo.AddAnimal(new Salmon());
+        animalZoo.AddAnimal(new Lion());
+        animalZoo.AddAnimal(new Donkey());
+        Console.WriteLine("This should be True: "+animalZoo.HasAnimal<Fish>());
         }
         class Zoo<TAnimal> where TAnimal : Animal
         {
@@ -37,12 +43,9 @@ namespace ZooFK
                 this.animals.Add(animal);
             }
 
-            public bool HasAnimal<TSpecies>()
-            {
-                for (int i = 0; i < animals.Count(); i++)
-                {
-                    if (typeof(TSpecies) == animals[i].GetType())
-                    {
+            public bool HasAnimal<TSpecies>() where TSpecies : TAnimal {
+                for (int i = 0; i < this.animals.Count; i++) {
+                    if (this.animals[i] is TSpecies) {
                         return true;
                     }
                 }
