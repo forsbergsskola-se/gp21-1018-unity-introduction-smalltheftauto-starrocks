@@ -1,22 +1,17 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class CameraMotionBT : MonoBehaviour {
-    public CarMovementBT carMovement;
     public Transform player;
     public Transform vehicle;
-    public Transform camTransform;
     public Vector3 offset;
     public float SmoothTime = 0.3f;
     private Vector3 velocity = Vector3.zero;
     private void Start() {
-        offset = camTransform.position - player.position;
+        offset = transform.position - player.position;
     }
     private void LateUpdate() {
-        if (carMovement.enabled) {
+        if (FindObjectOfType<CarMovementBT>().enabled) {
             CameraFollowVehicle();
         }
         else {
@@ -25,12 +20,10 @@ public class CameraMotionBT : MonoBehaviour {
     }
     void CameraFollowPlayer() {
         Vector3 targetPosition = player.position + offset;
-        camTransform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
-        transform.LookAt(player);
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, 0.02f);
     }
     void CameraFollowVehicle() {
         Vector3 targetPosition = vehicle.position + offset;
-        camTransform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
-        transform.LookAt(vehicle);
+        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
     }
 }
