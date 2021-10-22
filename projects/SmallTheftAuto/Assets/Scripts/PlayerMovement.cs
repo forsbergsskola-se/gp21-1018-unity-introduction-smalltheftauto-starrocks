@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]float moveSpeed =10f;
-    [SerializeField]float rotateSpeed;
+    [SerializeField][Range(1f, 20f)]float moveSpeed = 10f;
+    [SerializeField][Range(0f, 360f)]float rotateSpeed;
     void Update()
     {
         PlayerMove();
