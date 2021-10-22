@@ -559,9 +559,11 @@ GameObject:
   - component: {fileID: 1917105312}
   - component: {fileID: 1917105314}
   - component: {fileID: 1917105315}
+  - component: {fileID: 1917105317}
+  - component: {fileID: 1917105316}
   m_Layer: 0
   m_Name: _Car
-  m_TagString: Untagged
+  m_TagString: Vehicle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -622,6 +624,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9178eb046638e4b4388fe5bdda04674b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1917105316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917105311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.5611815, y: 2.85123, z: 11.321149}
+  m_Center: {x: 0, y: 1.7839254, z: 4.7489047}
+--- !u!54 &1917105317
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917105311}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1918001107 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4047925843763969255, guid: 6fcd7e8f216b4c04a915d2dd193f6104, type: 3}
