@@ -33,7 +33,7 @@ public class Vehicle : MonoBehaviour
         return false;
     }
     
-    private bool PlayerIsInCar()
+    public bool PlayerIsInCar()
     {
         return !player.activeInHierarchy;
     }
