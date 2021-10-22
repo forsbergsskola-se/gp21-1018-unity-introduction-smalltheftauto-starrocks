@@ -607,6 +607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1918001107}
   carMovement: {fileID: 1917105312}
+  minDistance: 7
 --- !u!1 &1918001107 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4047925843763969255, guid: 6fcd7e8f216b4c04a915d2dd193f6104, type: 3}
