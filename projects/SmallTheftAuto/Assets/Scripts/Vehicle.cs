@@ -10,7 +10,7 @@ public class Vehicle : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && IsVehicleInRange())
+        if (Input.GetButtonDown("Interact-Vehicle") && IsVehicleInRange())
         {
             if (PlayerIsInCar())
             {
@@ -25,7 +25,7 @@ public class Vehicle : MonoBehaviour
 
     private bool IsVehicleInRange()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) <= minDistance)
+        if (Vector3.Distance(transform.GetChild(0).position, player.transform.position) <= minDistance)
         {
             return true;
         }
@@ -46,7 +46,7 @@ public class Vehicle : MonoBehaviour
 
     private void LeaveCar()
     {
-        player.transform.position = this.transform.position;
+        player.transform.position = transform.GetChild(0).position;
         player.SetActive(true);
         carMovement.enabled = false;
     }
