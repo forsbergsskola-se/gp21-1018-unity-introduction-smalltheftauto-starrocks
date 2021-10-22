@@ -9,7 +9,22 @@ ModelImporter:
   - first:
       74: -6349700856906896448
     second: CarWheelFront|CarWheelAction.007
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 51a133da7a4143f489c08e819d3b7b3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_carBody
+    second: {fileID: 2100000, guid: dfc4f5ed68e8e6a4d9b542ad6a00c6a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_carLight
+    second: {fileID: 2100000, guid: 37caecde43909434c8ddae8880070965, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
