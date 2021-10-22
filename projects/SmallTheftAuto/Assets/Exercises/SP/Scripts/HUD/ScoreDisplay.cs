@@ -1,10 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Text))]
-public class MoneyDisplay : MonoBehaviour
+public class ScoreDisplay : MonoBehaviour
 {
     private PlayerStats _playerStats;
     private Text _text;
@@ -18,6 +15,6 @@ public class MoneyDisplay : MonoBehaviour
    
     void Update()
     {
-        _text.text = "$" + _playerStats.Money;
+        _text.text = _playerStats.Score + "pt";
     }
 }
