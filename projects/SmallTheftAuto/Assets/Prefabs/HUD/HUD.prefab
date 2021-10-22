@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 3782461967119164561}
   - component: {fileID: 3782461967119164559}
   - component: {fileID: 3782461967119164558}
+  - component: {fileID: 798130398}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -272,6 +273,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0000pts
+--- !u!114 &798130398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3782461967119164560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56890b12260908d4f9c38551e4b7d275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3782461967125792839
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,6 +374,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleOffset: {x: 2, y: 0.2, z: 0}
+  yellowBar: 0.5
+  redBar: 0.2
 --- !u!1 &3782461967200580452
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +387,7 @@ GameObject:
   - component: {fileID: 3782461967200580453}
   - component: {fileID: 3782461967200580451}
   - component: {fileID: 3782461967200580450}
+  - component: {fileID: 1170753704}
   m_Layer: 5
   m_Name: Money
   m_TagString: Untagged
@@ -440,6 +456,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: $000000
+--- !u!114 &1170753704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3782461967200580452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7faa12251a6cb4096e7f578566d210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3782461967286936951
 GameObject:
   m_ObjectHideFlags: 0
