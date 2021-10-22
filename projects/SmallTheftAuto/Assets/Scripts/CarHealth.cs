@@ -18,6 +18,9 @@ public class CarHealth : MonoBehaviour {
 	private void OnCollisionEnter(Collision other) {
 		if (other.gameObject.CompareTag("Vehicle")) {
 			TakeDamage(damage);
+			if (health <= 0) {
+				Destroy(this.gameObject);
+			}
 		}
 	}
 }
