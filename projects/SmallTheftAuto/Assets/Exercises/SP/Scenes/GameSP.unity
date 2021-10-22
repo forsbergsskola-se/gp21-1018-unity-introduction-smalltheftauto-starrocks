@@ -226,14 +226,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 113135622, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
-      propertyPath: redBar
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 113135622, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
-      propertyPath: yellowBar
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3782461966626108416, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
       propertyPath: m_Name
       value: HUD
@@ -321,10 +313,6 @@ PrefabInstance:
     - target: {fileID: 3782461966626110460, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3782461967125792837, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
@@ -425,23 +413,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1817586231}
---- !u!1 &1170753700 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3782461967200580452, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
-  m_PrefabInstance: {fileID: 127428150}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1170753704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1170753700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe7faa12251a6cb4096e7f578566d210, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1817586230
 GameObject:
   m_ObjectHideFlags: 0
