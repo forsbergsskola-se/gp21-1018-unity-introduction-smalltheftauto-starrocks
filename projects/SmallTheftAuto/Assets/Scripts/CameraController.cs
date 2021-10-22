@@ -22,6 +22,7 @@ public class CameraController : MonoBehaviour {
     void CameraFollowing() {
 	    if (player.IsDestroyed() || vehicle.IsDestroyed()) {
 		    //WASTEDSCREEN()!
+		    //Respawn!
 		    return;
 	    }
 	    if (player.gameObject.activeInHierarchy) {

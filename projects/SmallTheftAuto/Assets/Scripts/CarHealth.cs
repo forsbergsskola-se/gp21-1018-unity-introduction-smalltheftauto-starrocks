@@ -20,7 +20,13 @@ public class CarHealth : MonoBehaviour {
 			TakeDamage(damage);
 			if (health <= 0) {
 				Destroy(this.gameObject);
+				CarExplodes();
 			}
 		}
+	}
+	void CarExplodes() {
+		Debug.Log("iExploded");
+		//whateverfancysmancystyff
+		//add Michael Bay...
 	}
 }
