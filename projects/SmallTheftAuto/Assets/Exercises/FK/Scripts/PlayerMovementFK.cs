@@ -21,7 +21,7 @@ public class PlayerMovementFK : MonoBehaviour
 
     void Update() {
         
-        transform.Translate(0f, moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"), 0f); //TODO /2 when going backwards
+        transform.Translate(0f, 0f, moveSpeed * Time.deltaTime * Input.GetAxis("Vertical")); //TODO /2 when going backwards
         transform.Translate( moveSpeed * Time.deltaTime * Input.GetAxis("Horizontal"), 0f, 0f);
         //LookAt();
         //Move();
@@ -31,7 +31,7 @@ public class PlayerMovementFK : MonoBehaviour
         Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
         Vector3 dir = Input.mousePosition - pos;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle -90f, Vector3.forward);
+        transform.rotation = Quaternion.AngleAxis(angle -90f, Vector3.down);
     }
 
     void Move()
