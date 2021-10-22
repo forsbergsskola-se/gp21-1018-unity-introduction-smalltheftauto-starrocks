@@ -11,17 +11,32 @@ public class Vehicle : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (player.activeInHierarchy)
+            if (PlayerIsInCar())
             {
-                player.SetActive(false);
-                carMovement.enabled = true;
+                LeaveCar();
             }
             else
             {
-                player.transform.position = this.transform.position;
-                player.SetActive(true);
-                carMovement.enabled = false;
+                EnterCar();
             }
         } 
+    }
+
+    private bool PlayerIsInCar()
+    {
+        return !player.activeInHierarchy;
+    }
+
+    private void EnterCar()
+    {
+        player.SetActive(false);
+        carMovement.enabled = true;
+    }
+
+    private void LeaveCar()
+    {
+        player.transform.position = this.transform.position;
+        player.SetActive(true);
+        carMovement.enabled = false;
     }
 }
