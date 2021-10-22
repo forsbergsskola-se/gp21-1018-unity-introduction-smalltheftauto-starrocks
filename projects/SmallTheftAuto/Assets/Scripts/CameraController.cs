@@ -7,17 +7,25 @@ public class CameraController : MonoBehaviour {
     [SerializeField]Transform player;
     Vector3 velocity = Vector3.zero;
     [SerializeField]float smoothTime = 0.3f;
+    [SerializeField]Transform vehicle;
+
+    
     void Start() {
         offset = transform.position - player.position;
     }
 
-    void LateUpdate()
-    {
-	    CameraFollowsPlayer(); //This needs to change when VEH is added
-	}
+    void LateUpdate() {
+	    CameraFollowing();
+    }
 
-	void CameraFollowsPlayer() {
-	    Vector3 targetPosition = player.position + offset;
-	    transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
-	}
+    void CameraFollowing() {
+	    if (player.gameObject.activeInHierarchy) {
+		    Vector3 targetPosition = player.position + offset;
+		    transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+	    }
+	    else if (vehicle.gameObject.activeInHierarchy) {
+		    Vector3 targetPosition = vehicle.GetChild(0).position + offset;
+		    transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+	    }
+    }
 }
