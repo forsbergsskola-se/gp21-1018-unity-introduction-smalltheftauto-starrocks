@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 
@@ -20,7 +16,6 @@ public class HealthBarScale : MonoBehaviour
     {
         _playerStats = GetComponentInParent<PlayerStatsLoader>().playerStats;
         _image = GetComponent<Image>();
-
     }
 
     private void Update()
