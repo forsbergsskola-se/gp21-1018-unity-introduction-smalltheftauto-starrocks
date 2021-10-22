@@ -292,6 +292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 606196855}
   smoothTime: 0.3
+  vehicle: {fileID: 1917105313}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -319,7 +320,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 20
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -557,6 +558,7 @@ GameObject:
   - component: {fileID: 1917105313}
   - component: {fileID: 1917105312}
   - component: {fileID: 1917105314}
+  - component: {fileID: 1917105315}
   m_Layer: 0
   m_Name: _Car
   m_TagString: Untagged
@@ -607,12 +609,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1918001107}
   carMovement: {fileID: 1917105312}
-  minDistance: 7
+  minDistance: 8
+--- !u!114 &1917105315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917105311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9178eb046638e4b4388fe5bdda04674b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1918001107 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4047925843763969255, guid: 6fcd7e8f216b4c04a915d2dd193f6104, type: 3}
   m_PrefabInstance: {fileID: 1197470122}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1918001108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918001107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875795afe4033f84495e3583f3fc2e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2117457501
 PrefabInstance:
   m_ObjectHideFlags: 0
