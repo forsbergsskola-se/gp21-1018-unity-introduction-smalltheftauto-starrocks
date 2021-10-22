@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class CarMovementBT : MonoBehaviour
 {
-	[SerializeField][Range(1f,30f)] float moveSpeed;
-	[SerializeField][Range(60f,250f)] float rotationSpeed;
+	[SerializeField][Range(1f, 30f)]float moveSpeed = 20f;
+	[SerializeField][Range(0f, -360f)]float rotateSpeed = -180f;
 	void Update()
 	{
-		Move();
+		CarMove();
 	}
-	void Move()
+
+	void CarMove()
 	{
-		transform.Translate(0, Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime, 0);
-		transform.Rotate(0, 0, -Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime);
+		transform.Translate(0f, moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"), 0);
+		transform.Rotate(0f, 0,rotateSpeed * Time.deltaTime * Input.GetAxis("Horizontal"));
 	}
 }
