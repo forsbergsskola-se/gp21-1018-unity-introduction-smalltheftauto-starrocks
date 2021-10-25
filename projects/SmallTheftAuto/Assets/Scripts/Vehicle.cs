@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Vehicle : MonoBehaviour
@@ -10,26 +8,25 @@ public class Vehicle : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetButtonDown("Interact-Vehicle") && IsVehicleInRange())
+        if (Input.GetButtonDown("Interact-Vehicle"))
         {
             if (PlayerIsInCar())
             {
                 LeaveCar();
             }
-            else
+            else if (VehicleInRange())
             {
                 EnterCar();
             }
         } 
     }
 
-    private bool IsVehicleInRange()
+    private bool VehicleInRange()
     {
         if (Vector3.Distance(transform.GetChild(0).position, player.transform.position) <= minDistance)
         {
             return true;
         }
-
         return false;
     }
     
