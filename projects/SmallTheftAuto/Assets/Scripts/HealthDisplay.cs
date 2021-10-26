@@ -15,7 +15,7 @@ public class HealthDisplay : MonoBehaviour
     private void LateUpdate()
     {
         ScaleHealthBar();
-        if(_playerStats.Health < 25) _image.color = Color.red;
+        ChangeColor();
     }
 
     private void ScaleHealthBar()
@@ -23,5 +23,12 @@ public class HealthDisplay : MonoBehaviour
         float health = _playerStats.Health;
         Vector3 scaleHealthBar = new Vector3(health / 50, 0.2f, 1);
         transform.localScale = scaleHealthBar;
+    }
+
+    private void ChangeColor()
+    {
+        if (_playerStats.Health < 25) _image.color = Color.red;
+        else if (_playerStats.Health < 50) _image.color = Color.yellow;
+        else _image.color = Color.green;
     }
 }
