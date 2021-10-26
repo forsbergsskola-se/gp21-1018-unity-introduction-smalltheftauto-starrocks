@@ -27,12 +27,12 @@ public class CarMovementFK : MonoBehaviour
         Vector3 backwardSpeed = new Vector3(0f, 0f, speed * 0.5f);
         if (speed < 0)
         {
-            rigidbody.AddForce(backwardSpeed);
+            rigidbody.AddForceAtPosition(backwardSpeed, this.transform.position);
         }
 
         if (speed >= 0)
         {
-            rigidbody.AddForce(forwardSpeed);
+            rigidbody.AddForceAtPosition(forwardSpeed, this.transform.position);
         }
         
         //transform.Translate();
