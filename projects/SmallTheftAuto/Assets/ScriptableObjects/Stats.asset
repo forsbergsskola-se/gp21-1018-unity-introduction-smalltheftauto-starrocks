@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Stats
   m_EditorClassIdentifier: 
   health: 0
-  money: 0
-  score: -6
+  money: 16006
+  score: 1845
