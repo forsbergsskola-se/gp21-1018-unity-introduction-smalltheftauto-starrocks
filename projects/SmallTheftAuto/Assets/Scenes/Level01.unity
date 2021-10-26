@@ -1694,6 +1694,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1641193224083657230, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -17.900024
+      objectReference: {fileID: 0}
     - target: {fileID: 3782461966626108416, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
       propertyPath: m_Name
       value: HUD
@@ -1781,6 +1785,18 @@ PrefabInstance:
     - target: {fileID: 3782461966626110460, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782461967125792837, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782461967125792837, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782461967286936948, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -15.400024
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
