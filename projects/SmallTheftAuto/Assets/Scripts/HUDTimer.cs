@@ -12,7 +12,6 @@ public class HUDTimer : MonoBehaviour {
 	}
 
 	void Update() {
-		//set timer UI
 		timePassed += Time.deltaTime;
 		timerText.text = minutesPassed + "m " + timePassed.ToString("0.00") + "s";
 		if (timePassed >= 60) {
