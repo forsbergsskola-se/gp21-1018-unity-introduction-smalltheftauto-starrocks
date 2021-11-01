@@ -94176,6 +94176,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5655457004640661679, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
+      propertyPath: m_Text
+      value: W A S T E D !
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655457004640661679, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143500428983783703, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
+      propertyPath: m_Name
+      value: Wasted
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143500428983783703, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcbd5499773bfa74284c3005b7b637a3, type: 3}
 --- !u!1 &2117858345

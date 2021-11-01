@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(menuName = "ScriptableObject/Player/Stats", fileName = "Stats")]
 public class PlayerStats : ScriptableObject
@@ -9,7 +10,7 @@ public class PlayerStats : ScriptableObject
    [SerializeField] private int score;
    [SerializeField] private int minHealth;
    [SerializeField] private int maxHealth;
-
+   public GameObject wasted;
    
    public int Health
    {
@@ -42,5 +43,6 @@ public class PlayerStats : ScriptableObject
       Destroy(player);
       Debug.Log("I DIED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
       //Add Death Screen
+      SceneManager.LoadScene("Wasted", LoadSceneMode.Additive);
    }
 }

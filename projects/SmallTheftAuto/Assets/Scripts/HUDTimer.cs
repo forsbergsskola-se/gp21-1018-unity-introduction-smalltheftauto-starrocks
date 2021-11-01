@@ -6,12 +6,12 @@ public class HUDTimer : MonoBehaviour {
 	private float timePassed;
 	private int minutesPassed;
 	
-	void Start()
+	private void Awake()
 	{
 		timerText = GetComponent<Text>();
 	}
 
-	void Update() {
+	private void Update() {
 		timePassed += Time.deltaTime;
 		timerText.text = minutesPassed + "m " + timePassed.ToString("0.00") + "s";
 		if (timePassed >= 60) {
