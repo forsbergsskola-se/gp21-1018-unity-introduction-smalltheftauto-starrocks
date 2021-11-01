@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 7367811376035847704}
   - component: {fileID: 7367811376035847703}
   - component: {fileID: 7367811376035847706}
+  - component: {fileID: -4290799827305997706}
   m_Layer: 0
-  m_Name: Vehicle
+  m_Name: VehicleBT
   m_TagString: Vehicle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7367811376035847702}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.98, y: -11.29, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7367811377863080205}
@@ -46,8 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9526c04af305c845b8ca704f5d66dfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 4047925843763969255, guid: 6fcd7e8f216b4c04a915d2dd193f6104, type: 3}
-  minVehicleDistance: 4
+  player: {fileID: 1172667044774302419, guid: a50e1a381e353da49ba71e8865a1ed4b, type: 3}
+  minDistance: 100000
 --- !u!114 &7367811376035847703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,6 +79,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &-4290799827305997706
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7367811376035847702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7367811377863080199
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +118,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7367811377863080199}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.9858446, y: 4.6389008, z: 1.5832}
   m_Children: []
   m_Father: {fileID: 7367811376035847705}

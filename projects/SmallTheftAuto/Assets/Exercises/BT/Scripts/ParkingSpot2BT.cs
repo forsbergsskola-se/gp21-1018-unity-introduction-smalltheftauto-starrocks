@@ -1,18 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParkingSpot2BT : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class ParkingSpot2BT : MonoBehaviour {
+	public bool hasCar;
+	public GameObject carPrefab;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void Start() {
+		if (hasCar == true) {
+			SpawnCar();
+		}
+	}
+	void SpawnCar() {
+		Instantiate(carPrefab, new Vector3(12, -0, 0), Quaternion.Euler(0,0,0));
+	}
 }
