@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16.299988, y: -17.9}
+  m_AnchoredPosition: {x: -16.299988, y: -17.900024}
   m_SizeDelta: {x: 97.5166, y: 18.2844}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &1268784979332300337
@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 3782461967119164561}
   - component: {fileID: 3782461967119164559}
   - component: {fileID: 3782461967119164558}
+  - component: {fileID: 338617497}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -365,6 +366,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0000pts
+--- !u!114 &338617497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3782461967119164560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee6d6b0492ab054b90a44504b396092, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3782461967125792839
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,6 +389,7 @@ GameObject:
   - component: {fileID: 3782461967125792836}
   - component: {fileID: 3782461967125792834}
   - component: {fileID: 3782461967125792837}
+  - component: {fileID: 200063308}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -423,7 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.051846504, g: 1, b: 0, a: 1}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -440,6 +454,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &200063308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3782461967125792839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bbb0bddd6fc08a41a9a232581aacb35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3782461967200580452
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +477,7 @@ GameObject:
   - component: {fileID: 3782461967200580453}
   - component: {fileID: 3782461967200580451}
   - component: {fileID: 3782461967200580450}
+  - component: {fileID: 1680255093}
   m_Layer: 5
   m_Name: Money
   m_TagString: Untagged
@@ -519,6 +546,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: $000000
+--- !u!114 &1680255093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3782461967200580452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d244373d8017a6944b496e9e967f9786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3782461967286936951
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -15.399994, y: 20}
+  m_AnchoredPosition: {x: -15.400024, y: 20}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &3782461967286936946
