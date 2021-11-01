@@ -10,4 +10,9 @@ public class PlayerStats : ScriptableObject
    public int Health => health;
    public float Money => money;
    public float Score => score;
+
+   public void TakeDamage(int damage)
+   {
+      health -= damage;
+   }
 }
