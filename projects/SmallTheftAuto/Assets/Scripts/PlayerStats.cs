@@ -40,6 +40,7 @@ public class PlayerStats : ScriptableObject
    public void KillPlayer(GameObject player) {
       Health = 0;
       Destroy(player);
+      Debug.Log("I DIED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
       //Add Death Screen
    }
 }

@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(PlayerStatsLoader))]
 public class CarHealth : MonoBehaviour {
 	[SerializeField] int health;
 	[SerializeField] int maxHealth;
 	[SerializeField] int damage;
 	[SerializeField] int burningThresholdHealth = 60;
+	private PlayerStats _playerStats;
 
 	private void Awake() {
 		health = maxHealth;
@@ -27,15 +29,14 @@ public class CarHealth : MonoBehaviour {
 		}
 		else if (other.gameObject.CompareTag("Water")) {
 			Destroy(this.gameObject);
+			_playerStats.KillPlayer(gameObject);
 		}
 	}
 	void CarExplodes() {
 		Debug.Log("iExploded");
 		if (GetComponent<Vehicle>().PlayerIsInCar())
 		{
-			Destroy(GetComponent<Vehicle>().player.gameObject);
-			//Destroy(GameObject.Find("Player"));
-			Debug.Log("I DIED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+			_playerStats.KillPlayer(gameObject);
 		}
 		//whateverfancysmancystyff.
 		//add Michael Bay...
