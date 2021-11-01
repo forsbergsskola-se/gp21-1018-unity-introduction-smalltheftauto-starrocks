@@ -11,7 +11,12 @@ public class ParkingspotFK : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(carPrefab, transform.position, quaternion.identity);
+        if (hasCar)
+        {
+            Instantiate(carPrefab, transform.position, quaternion.identity);
+            hasCar = false;
+        }
+        
     }
 
     // Update is called once per frame
