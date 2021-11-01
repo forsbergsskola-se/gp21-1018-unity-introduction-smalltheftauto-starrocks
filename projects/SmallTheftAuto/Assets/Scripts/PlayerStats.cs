@@ -33,4 +33,7 @@ public class PlayerStats : ScriptableObject
    {
       health = maxHealth;
    }
+   public void InstantDeath() {
+      Health = 0;
+   }
 }

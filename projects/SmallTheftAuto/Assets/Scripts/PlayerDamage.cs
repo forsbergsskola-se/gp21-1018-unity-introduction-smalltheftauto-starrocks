@@ -13,6 +13,13 @@ public class PlayerDamage : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        _playerStats.TakeDamage(30);
-    }
+        if (other.gameObject.CompareTag("Water"))
+        {
+            _playerStats.InstantDeath();
+        }
+
+        if (other.gameObject.CompareTag("Vehicle"))
+        {
+            _playerStats.TakeDamage(30);
+        }    }
 }
