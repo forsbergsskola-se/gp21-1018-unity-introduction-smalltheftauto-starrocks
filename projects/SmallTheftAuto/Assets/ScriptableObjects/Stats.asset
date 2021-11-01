@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1df8314c5f1f08a48b38e08095e7cc58, type: 3}
   m_Name: Stats
   m_EditorClassIdentifier: 
-  health: 0
-  money: 16006
+  health: 87
+  money: 15895
   score: 1845
