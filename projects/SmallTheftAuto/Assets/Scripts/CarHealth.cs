@@ -23,8 +23,10 @@ public class CarHealth : MonoBehaviour {
 			if (health <= 0) {
 				Destroy(this.gameObject);
 				CarExplodes();
-				
 			}
+		}
+		else if (other.gameObject.CompareTag("Water")) {
+			Destroy(this.gameObject);
 		}
 	}
 	void CarExplodes() {
