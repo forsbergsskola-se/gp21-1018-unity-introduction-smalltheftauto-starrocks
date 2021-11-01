@@ -15,11 +15,12 @@ public class PlayerDamage : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Water"))
         {
-            _playerStats.InstantDeath();
+            _playerStats.KillPlayer(gameObject);
         }
 
         if (other.gameObject.CompareTag("Vehicle"))
         {
-            _playerStats.TakeDamage(30);
-        }    }
+            _playerStats.TakeDamage(50, gameObject);
+        }    
+    }
 }

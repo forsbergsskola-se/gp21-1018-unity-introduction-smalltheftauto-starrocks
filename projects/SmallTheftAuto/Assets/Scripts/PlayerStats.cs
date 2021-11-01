@@ -24,16 +24,22 @@ public class PlayerStats : ScriptableObject
    public float Money => money;
    public float Score => score;
 
-   public void TakeDamage(int damage)
+   public void TakeDamage(int damage, GameObject player )
    {
       Health -= damage;
+      if (Health == 0) {
+         KillPlayer(player);
+      }
    }
 
    public void InitializePlayerStats()
    {
       health = maxHealth;
    }
-   public void InstantDeath() {
+
+   public void KillPlayer(GameObject player) {
       Health = 0;
+      Destroy(player);
+      //Add Death Screen
    }
 }
