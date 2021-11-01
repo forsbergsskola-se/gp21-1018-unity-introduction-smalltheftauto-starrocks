@@ -8,6 +8,7 @@ TagManager:
   - Road
   - Wall
   - Water
+  - Body
   layers:
   - Default
   - TransparentFX
