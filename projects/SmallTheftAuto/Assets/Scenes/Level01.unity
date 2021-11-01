@@ -33681,6 +33681,7 @@ GameObject:
   - component: {fileID: 767010131}
   - component: {fileID: 767010130}
   - component: {fileID: 767010129}
+  - component: {fileID: 767010133}
   m_Layer: 0
   m_Name: _Car (1)
   m_TagString: Vehicle
@@ -33748,6 +33749,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &767010133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767010128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a78e3b11971bf904cab6c0a012ffda70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 0}
 --- !u!1001 &768097834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53557,7 +53571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5768273155743924413, guid: 6fcd7e8f216b4c04a915d2dd193f6104, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7148908703772746789, guid: 6fcd7e8f216b4c04a915d2dd193f6104, type: 3}
       propertyPath: m_WarningMessage
@@ -95380,6 +95394,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5960565288215889658, guid: 8db020b0060222f419d2b894fa262fde, type: 3}
+      propertyPath: playerStats
+      value: 
+      objectReference: {fileID: 11400000, guid: 3945224d9736a2a479d894cb6785901b, type: 2}
     - target: {fileID: 6687020878087206921, guid: 8db020b0060222f419d2b894fa262fde, type: 3}
       propertyPath: m_Name
       value: Car
@@ -95414,11 +95432,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6687020878087206965, guid: 8db020b0060222f419d2b894fa262fde, type: 3}
       propertyPath: health
-      value: 150
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6687020878087206965, guid: 8db020b0060222f419d2b894fa262fde, type: 3}
       propertyPath: maxHealth
-      value: 150
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6687020878087206965, guid: 8db020b0060222f419d2b894fa262fde, type: 3}
       propertyPath: burningThresholdHealth
