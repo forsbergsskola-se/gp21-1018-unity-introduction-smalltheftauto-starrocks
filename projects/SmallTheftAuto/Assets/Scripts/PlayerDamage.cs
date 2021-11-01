@@ -8,6 +8,7 @@ public class PlayerDamage : MonoBehaviour
     private void Awake()
     {
         _playerStats = GetComponent<PlayerStatsLoader>().playerStats;
+        _playerStats.InitializePlayerStats();
     }
 
     private void OnCollisionEnter(Collision other)

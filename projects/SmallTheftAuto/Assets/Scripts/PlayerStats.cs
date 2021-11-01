@@ -10,22 +10,27 @@ public class PlayerStats : ScriptableObject
    [SerializeField] private int minHealth;
    [SerializeField] private int maxHealth;
 
-
+   
    public int Health
    {
       get => health;
       set
       {
          health = value;
-         Mathf.Clamp(health, minHealth, maxHealth);
+         health=Mathf.Clamp(health, minHealth, maxHealth);
       }
    }
-
+   
    public float Money => money;
    public float Score => score;
 
    public void TakeDamage(int damage)
    {
       Health -= damage;
+   }
+
+   public void InitializePlayerStats()
+   {
+      health = maxHealth;
    }
 }
