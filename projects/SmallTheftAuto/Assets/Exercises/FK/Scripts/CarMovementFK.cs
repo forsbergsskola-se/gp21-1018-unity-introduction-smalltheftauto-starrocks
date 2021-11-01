@@ -22,20 +22,20 @@ public class CarMovementFK : MonoBehaviour
     void Move()
     {
         
-        float speed = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
-        Vector3 forwardSpeed = new Vector3(0f, 0f, speed);
-        Vector3 backwardSpeed = new Vector3(0f, 0f, speed * 0.5f);
-        if (speed < 0)
-        {
-            rigidbody.AddForceAtPosition(backwardSpeed, this.transform.position);
-        }
-
-        if (speed >= 0)
-        {
-            rigidbody.AddForceAtPosition(forwardSpeed, this.transform.position);
-        }
+        // float speed = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+        // Vector3 forwardSpeed = new Vector3(0f, 0f, speed);
+        // Vector3 backwardSpeed = new Vector3(0f, 0f, speed * 0.5f);
+        // if (speed < 0)
+        // {
+        //     rigidbody.AddForce(backwardSpeed );
+        // }
+        //
+        // if (speed >= 0)
+        // {
+        //     rigidbody.AddForceAtPosition(forwardSpeed, this.transform.position);
+        // }
         
-        //transform.Translate();
+        transform.Translate(0f,0f,Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime);
         transform.Rotate(0f, Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime, 0f);
     }
 }
