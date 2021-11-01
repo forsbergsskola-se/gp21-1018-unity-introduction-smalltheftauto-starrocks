@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 [RequireComponent(typeof(PlayerStatsLoader))]
 public class CarHealth : MonoBehaviour {
 	[SerializeField] int health;
@@ -13,13 +12,15 @@ public class CarHealth : MonoBehaviour {
 
 	private void Awake() {
 		health = maxHealth;
+		_playerStats = GetComponent<PlayerStatsLoader>().playerStats;
+		// _playerStats.InitializePlayerStats();
 	}
 	void TakeDamage(int damage) {
 		health -= damage;
 		health = Mathf.Clamp(health, 0 , maxHealth);
 	}
 	private void OnCollisionEnter(Collision other) {
-		if (other.gameObject.CompareTag("Vehicle")||other.gameObject.CompareTag("Wall")) {
+		if (other.gameObject.CompareTag("Vehicle") || other.gameObject.CompareTag("Wall")) {
 			TakeDamage(damage);
 			CarBurns();
 			if (health <= 0) {
