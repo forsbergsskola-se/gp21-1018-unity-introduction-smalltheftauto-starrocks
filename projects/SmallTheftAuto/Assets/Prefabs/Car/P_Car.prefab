@@ -1148,7 +1148,7 @@ Transform:
   m_GameObject: {fileID: 6687020878087206921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.37, y: 0, z: -4.53}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8635, y: 0.8635, z: 0.8635}
   m_Children:
   - {fileID: 6687020878694007705}
   - {fileID: 6611130297891806785}
@@ -1168,8 +1168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f91d23aec3b98849ae2948a16456f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 20
-  rotateSpeed: 180
+  moveSpeed: 12
+  rotateSpeed: 45
 --- !u!114 &6687020878087206964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1197,10 +1197,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9178eb046638e4b4388fe5bdda04674b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
-  maxHealth: 200
-  damage: 50
-  burningThresholdHealth: 60
+  health: 100
+  maxHealth: 100
+  damage: 20
+  burningThresholdHealth: 50
 --- !u!54 &6687020878087206963
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1210,8 +1210,8 @@ Rigidbody:
   m_GameObject: {fileID: 6687020878087206921}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 1
+  m_AngularDrag: 1
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1228,8 +1228,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.5611815, y: 2.85123, z: 11.321149}
-  m_Center: {x: 0, y: 1.7839254, z: 4.7489047}
+  m_Size: {x: 4.5611815, y: 7.354821, z: 11.321149}
+  m_Center: {x: 0, y: 4.035722, z: 4.748905}
 --- !u!1 &6925798050277346666
 GameObject:
   m_ObjectHideFlags: 0
