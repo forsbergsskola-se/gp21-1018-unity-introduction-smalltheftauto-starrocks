@@ -27,8 +27,4 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        throw new NotImplementedException();
-    }
 }

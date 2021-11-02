@@ -15,7 +15,7 @@ public class CarHealth : MonoBehaviour {
 		_playerStats = GetComponent<PlayerStatsLoader>().playerStats;
 		// _playerStats.InitializePlayerStats();
 	}
-	void TakeDamage(int damage) {
+	public void TakeDamage(int damage) {
 		health -= damage;
 		health = Mathf.Clamp(health, 0 , maxHealth);
 	}
@@ -33,6 +33,12 @@ public class CarHealth : MonoBehaviour {
 			_playerStats.KillPlayer(gameObject);
 		}
 	}
+	
+	private void OnParticleCollision(GameObject other)
+	{
+		Debug.Log("IT IS WORKING!!!!");
+	}
+	
 	void CarExplodes() {
 		Debug.Log("iExploded");
 		if (GetComponent<Vehicle>().PlayerIsInCar())
