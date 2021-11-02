@@ -7,12 +7,10 @@ using UnityEngine;
 public class VehicleFK : MonoBehaviour
 {
     public GameObject player;
-    public GameObject body;
 
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        body = GameObject.FindGameObjectWithTag("Body");
     }
 
     void Update() {
@@ -28,24 +26,24 @@ public class VehicleFK : MonoBehaviour
 
     private bool IsPlayerCloseToCar()
     {
-        return Vector3.Distance(this.body.transform.position, this.transform.position) < 5;
+        return Vector3.Distance(this.player.transform.position, this.transform.position) < 5;
     }
 
     private void ExitCar()
     {
         this.player.transform.position = this.transform.position;
-        this.body.SetActive(true);
+        this.player.SetActive(true);
         GetComponent<CarMovementFK>().enabled = false;
     }
 
     bool PlayerIsInCar()
     {
-        return !this.body.activeInHierarchy;
+        return !this.player.activeInHierarchy;
     }
 
     void EnterCar()
     {
-        this.body.SetActive(false);
+        this.player.SetActive(false);
         GetComponent<CarMovementFK>().enabled = true;
     }
 }
