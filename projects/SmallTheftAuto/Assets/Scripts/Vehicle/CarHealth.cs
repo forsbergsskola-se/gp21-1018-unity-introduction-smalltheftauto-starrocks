@@ -15,30 +15,36 @@ public class CarHealth : MonoBehaviour {
 		_playerStats = GetComponent<PlayerStatsLoader>().playerStats;
 		// _playerStats.InitializePlayerStats();
 	}
-	public void TakeDamage(int damage) {
-		health -= damage;
-		health = Mathf.Clamp(health, 0 , maxHealth);
+
+	private void LateUpdate()
+	{
+		if (health <= 0) {
+			Destroy(this.gameObject);
+			CarExplodes();
+		}
 	}
+
 	private void OnCollisionEnter(Collision other) {
 		if (other.gameObject.CompareTag("Vehicle") || other.gameObject.CompareTag("Wall")) {
 			TakeDamage(damage);
 			CarBurns();
-			if (health <= 0) {
-				Destroy(this.gameObject);
-				CarExplodes();
-			}
 		}
 		else if (other.gameObject.CompareTag("Water")) {
 			Destroy(this.gameObject);
 			_playerStats.KillPlayer(gameObject);
 		}
 	}
-	
+
 	private void OnParticleCollision(GameObject other)
 	{
-		Debug.Log("IT IS WORKING!!!!");
+		TakeDamage(damage);
 	}
-	
+
+	public void TakeDamage(int damage) {
+		health -= damage;
+		health = Mathf.Clamp(health, 0 , maxHealth);
+	}
+
 	void CarExplodes() {
 		Debug.Log("iExploded");
 		if (GetComponent<Vehicle>().PlayerIsInCar())
