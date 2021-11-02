@@ -12,14 +12,48 @@ public class WeaponSwitch : MonoBehaviour
 
     public GameObject[] inventory;
 
+    private int counter;
+    
     private void Start()
     {
-        
+        counter = 2;
     }
 
     private void Update()
     {
-        EquipeWeapon(Weapon.Fist);
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            ChangeCounter();
+            SwitchWeapon();
+        } 
+    }
+
+    private void ChangeCounter()
+    {
+        if (counter >= 2) counter = 0;
+        else counter++;
+    }
+
+    private void SwitchWeapon()
+    {
+        Weapon currentWeapon = Weapon.Fist;
+
+        switch (counter)
+        {
+            case 0:
+                currentWeapon = Weapon.Pistol; 
+                break;
+            
+            case 1:
+                currentWeapon = Weapon.MachineGun;
+                break;
+            
+            case 2:
+                currentWeapon = Weapon.Fist;
+                break;
+        }
+        
+        EquipeWeapon(currentWeapon);
     }
 
     private void EquipeWeapon(Weapon weapon)
