@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WeaponSwitch : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class WeaponSwitch : MonoBehaviour
     }
 
     public GameObject[] inventory;
+    public GameObject[] weaponImages;
 
     private int counter;
     
@@ -60,8 +62,15 @@ public class WeaponSwitch : MonoBehaviour
     {
         for (int i = 0; i < inventory.Length; i++)
         {
-            if (weapon == (Weapon) i) inventory[i].SetActive(true);
-            else inventory[i].SetActive(false);
+            if (weapon == (Weapon) i) {
+                inventory[i].SetActive(true);
+                weaponImages[i].SetActive(true);
+            }
+            else {
+                inventory[i].SetActive(false);
+                weaponImages[i].SetActive(false);
+
+            }
         }
     }
 }
