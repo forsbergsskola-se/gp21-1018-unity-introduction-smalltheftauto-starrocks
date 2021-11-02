@@ -10,10 +10,7 @@ public class TrafficAutoPilot : MonoBehaviour
 
     public Vector3 Destination
     {
-        get
-        {
-            return new Vector3(_destination.x, transform.position.y, _destination.z);
-        }
+        get => new Vector3(_destination.x, transform.position.y, _destination.z);
         set => _destination = value;
     }
 
@@ -25,6 +22,19 @@ public class TrafficAutoPilot : MonoBehaviour
     private void Update()
     {
         float step = speed * Time.deltaTime;
+        MoveTowardsTarget(step);
+        LookAtTarget(step);
+    }
+
+    private void MoveTowardsTarget(float step)
+    {
         transform.position = Vector3.MoveTowards(transform.position, Destination, step);
     }
+
+    private void LookAtTarget(float step)
+    {
+        transform.LookAt(Destination, Vector3.up);
+    }
+
+    
 }
