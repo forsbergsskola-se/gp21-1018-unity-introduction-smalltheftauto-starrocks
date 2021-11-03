@@ -20,16 +20,11 @@ public class CameraController : MonoBehaviour {
     }
 
     void CameraFollowing() {
-	    if (player.IsDestroyed() || vehicle.IsDestroyed()) {
-		    //WASTEDSCREEN()!
-		    //Respawn!
-		    return;
-	    }
 	    if (player.gameObject.activeInHierarchy) {
 		    Vector3 targetPosition = player.position + offset;
 		    transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
 	    }
-	    else {
+	    else if (!player.gameObject.activeInHierarchy) {
 		    Vector3 targetPosition = vehicle.GetChild(0).position + offset;
 		    transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
 	    }
