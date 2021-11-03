@@ -22,8 +22,13 @@ public class PlayerStats : ScriptableObject
       }
    }
    
-   public float Money => money;
-   public float Score => score;
+   public int Money
+   {
+      get => money;
+      set => money = value;
+   }
+
+   public int Score => score;
 
    public void TakeDamage(int damage, GameObject player )
    {
