@@ -47,6 +47,6 @@ public class PlayerStats : ScriptableObject
       Destroy(player);
       Debug.Log("I DIED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
       SceneManager.LoadScene("Wasted", LoadSceneMode.Additive);
-      money -= 200;
+      money /= 2;
    }
 }
