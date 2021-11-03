@@ -18,11 +18,8 @@ public class TrafficCarSpawner : MonoBehaviour
     {
         for (int i = 0; i < _wayPoints.Length; i++)
         {
-            if (i % 2 == 0)
-            {
-                GameObject temp = Instantiate(car, _wayPoints[i].position, transform.rotation);
-                temp.GetComponent<TrafficAutoPilot>().Destination = temp.transform.position;
-            }
+            GameObject temp = Instantiate(car, _wayPoints[i].position, transform.rotation);
+            temp.GetComponent<TrafficAutoPilot>().Destination = temp.transform.position;
         }
     }
 }
