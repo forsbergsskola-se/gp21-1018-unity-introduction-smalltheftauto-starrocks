@@ -29,7 +29,7 @@ public class CameraController : MonoBehaviour {
 		    Vector3 targetPosition = player.position + offset;
 		    transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
 	    }
-	    else if (vehicle.gameObject.activeInHierarchy) {
+	    else {
 		    Vector3 targetPosition = vehicle.GetChild(0).position + offset;
 		    transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
 	    }

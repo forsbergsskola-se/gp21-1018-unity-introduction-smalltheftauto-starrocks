@@ -6,7 +6,10 @@ public class MiniMap : MonoBehaviour
 {
     public Transform miniMapCameraTransform;
     public Transform playerTransform;
+    public Transform vehicleTransform;
     private Vector3 cameraFromPlayerOffset;
+    public GameObject player;
+    public GameObject vehicle;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +22,12 @@ public class MiniMap : MonoBehaviour
     {
         if (playerTransform != null)
         {
-            miniMapCameraTransform.position = playerTransform.position + cameraFromPlayerOffset;
+            if (player.gameObject.activeInHierarchy) {
+                miniMapCameraTransform.position = playerTransform.position + cameraFromPlayerOffset;
+            }
+            else {
+                miniMapCameraTransform.position = vehicleTransform.position + cameraFromPlayerOffset;
+            }
         }
         else
         {
