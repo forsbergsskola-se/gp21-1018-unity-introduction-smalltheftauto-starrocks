@@ -123,6 +123,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_01
       objectReference: {fileID: 0}
@@ -200,6 +204,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_61
@@ -279,6 +287,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_36
       objectReference: {fileID: 0}
@@ -356,6 +368,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_46
@@ -435,6 +451,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_38
       objectReference: {fileID: 0}
@@ -512,6 +532,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_20
@@ -591,6 +615,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_45
       objectReference: {fileID: 0}
@@ -668,6 +696,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_30
@@ -747,6 +779,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_48
       objectReference: {fileID: 0}
@@ -824,6 +860,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_47
@@ -903,6 +943,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_51
       objectReference: {fileID: 0}
@@ -980,6 +1024,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_25
@@ -1059,6 +1107,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_35
       objectReference: {fileID: 0}
@@ -1136,6 +1188,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_18
@@ -1215,6 +1271,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_11
       objectReference: {fileID: 0}
@@ -1292,6 +1352,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_34
@@ -1371,6 +1435,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_13
       objectReference: {fileID: 0}
@@ -1448,6 +1516,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_52
@@ -1527,6 +1599,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_07
       objectReference: {fileID: 0}
@@ -1604,6 +1680,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_49
@@ -1683,6 +1763,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_41
       objectReference: {fileID: 0}
@@ -1760,6 +1844,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_23
@@ -1839,6 +1927,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_09
       objectReference: {fileID: 0}
@@ -1916,6 +2008,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_19
@@ -1995,6 +2091,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_15
       objectReference: {fileID: 0}
@@ -2072,6 +2172,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_32
@@ -2151,6 +2255,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_03
       objectReference: {fileID: 0}
@@ -2228,6 +2336,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_22
@@ -2307,6 +2419,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_12
       objectReference: {fileID: 0}
@@ -2384,6 +2500,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_02
@@ -2463,6 +2583,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_16
       objectReference: {fileID: 0}
@@ -2540,6 +2664,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_06
@@ -2619,6 +2747,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_53
       objectReference: {fileID: 0}
@@ -2696,6 +2828,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_68
@@ -2775,6 +2911,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_42
       objectReference: {fileID: 0}
@@ -2852,6 +2992,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_58
@@ -2931,6 +3075,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_64
       objectReference: {fileID: 0}
@@ -3008,6 +3156,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_04
@@ -3087,6 +3239,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_33
       objectReference: {fileID: 0}
@@ -3164,6 +3320,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_29
@@ -3243,6 +3403,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_54
       objectReference: {fileID: 0}
@@ -3320,6 +3484,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_10
@@ -3399,6 +3567,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_50
       objectReference: {fileID: 0}
@@ -3476,6 +3648,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_59
@@ -3555,6 +3731,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_56
       objectReference: {fileID: 0}
@@ -3632,6 +3812,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_26
@@ -3711,6 +3895,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_62
       objectReference: {fileID: 0}
@@ -3788,6 +3976,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_43
@@ -3867,6 +4059,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_39
       objectReference: {fileID: 0}
@@ -3944,6 +4140,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_31
@@ -4023,6 +4223,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_69
       objectReference: {fileID: 0}
@@ -4100,6 +4304,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_65
@@ -4179,6 +4387,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_21
       objectReference: {fileID: 0}
@@ -4256,6 +4468,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_60
@@ -4335,6 +4551,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_28
       objectReference: {fileID: 0}
@@ -4412,6 +4632,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_40
@@ -4491,6 +4715,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_57
       objectReference: {fileID: 0}
@@ -4568,6 +4796,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_17
@@ -4647,6 +4879,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_66
       objectReference: {fileID: 0}
@@ -4724,6 +4960,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_14
@@ -4803,6 +5043,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_37
       objectReference: {fileID: 0}
@@ -4880,6 +5124,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_08
@@ -4959,6 +5207,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_27
       objectReference: {fileID: 0}
@@ -5036,6 +5288,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_67
@@ -5115,6 +5371,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_44
       objectReference: {fileID: 0}
@@ -5192,6 +5452,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_24
@@ -5271,6 +5535,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_55
       objectReference: {fileID: 0}
@@ -5349,6 +5617,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_05
       objectReference: {fileID: 0}
@@ -5426,6 +5698,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37d1182db907cbb41a7a93d6aaf1810d, type: 2}
+    - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4070597388133279954, guid: 4eb17c51eeb87f14aacb820cdc4a48dd, type: 3}
       propertyPath: m_Name
       value: WayPoint_63

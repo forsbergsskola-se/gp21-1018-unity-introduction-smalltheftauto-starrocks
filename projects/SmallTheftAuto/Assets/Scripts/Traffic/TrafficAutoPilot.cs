@@ -4,7 +4,6 @@ using UnityEngine;
 public class TrafficAutoPilot : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] private Transform initialWaypoint; 
     
     private Vector3 _destination;
 
@@ -12,11 +11,6 @@ public class TrafficAutoPilot : MonoBehaviour
     {
         get => new Vector3(_destination.x, transform.position.y, _destination.z);
         set => _destination = value;
-    }
-
-    private void Awake()
-    {
-        Destination = initialWaypoint.position;
     }
 
     private void Update()

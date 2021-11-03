@@ -8,8 +8,12 @@ public class WayPointRoutes : MonoBehaviour
     {
         if (other.transform.GetComponent(typeof(TrafficAutoPilot)) != null)
         {
-            other.gameObject.GetComponent<TrafficAutoPilot>().Destination = routes[Random.Range(0, routes.Length)].position;
+            other.gameObject.GetComponent<TrafficAutoPilot>().Destination = SetNewRandomPossibleDestination();
         }
     }
-    
+
+    public Vector3 SetNewRandomPossibleDestination()
+    {
+        return routes[Random.Range(0, routes.Length)].position;
+    }
 }

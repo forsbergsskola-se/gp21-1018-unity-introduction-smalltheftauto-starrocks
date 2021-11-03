@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8893067573921743109}
   - component: {fileID: 1962575260498135580}
   - component: {fileID: 1429959929}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TrafficCar
   m_TagString: DullVehicle
   m_Icon: {fileID: 0}
@@ -76,7 +76,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
-  initialWaypoint: {fileID: 0}
 --- !u!1001 &4699837316480102956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84,6 +83,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4926496557434244785}
     m_Modifications:
+    - target: {fileID: -9097959707368502409, guid: e3fded3e0a935db458c13775e7cad4d7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8747660567298845291, guid: e3fded3e0a935db458c13775e7cad4d7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e3fded3e0a935db458c13775e7cad4d7, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -140,9 +147,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7604724084937185117, guid: e3fded3e0a935db458c13775e7cad4d7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6513575608552445315, guid: e3fded3e0a935db458c13775e7cad4d7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -3883504439310865563, guid: e3fded3e0a935db458c13775e7cad4d7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -3628192047280965121, guid: e3fded3e0a935db458c13775e7cad4d7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e3fded3e0a935db458c13775e7cad4d7, type: 3}
       propertyPath: m_Name
       value: STA_Project_Car_1_V1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e3fded3e0a935db458c13775e7cad4d7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2087297226969498589, guid: e3fded3e0a935db458c13775e7cad4d7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896430410030224578, guid: e3fded3e0a935db458c13775e7cad4d7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542526546730216890, guid: e3fded3e0a935db458c13775e7cad4d7, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9017072185221178700, guid: e3fded3e0a935db458c13775e7cad4d7, type: 3}
       propertyPath: m_Materials.Array.data[0]
