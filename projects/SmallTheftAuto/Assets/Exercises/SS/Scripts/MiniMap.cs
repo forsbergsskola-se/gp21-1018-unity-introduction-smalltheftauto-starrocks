@@ -17,6 +17,13 @@ public class MiniMap : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        miniMapCameraTransform.position = playerTransform.position + cameraFromPlayerOffset;
+        if (playerTransform != null)
+        {
+            miniMapCameraTransform.position = playerTransform.position + cameraFromPlayerOffset;
+        }
+        else
+        {
+            Debug.LogWarning("Payer.Transform value is Null");
+        }
     }
 }
