@@ -26,7 +26,12 @@ public class MiniMap : MonoBehaviour
                 miniMapCameraTransform.position = playerTransform.position + cameraFromPlayerOffset;
             }
             else {
-                miniMapCameraTransform.position = vehicleTransform.position + cameraFromPlayerOffset;
+                if (vehicleTransform != null) {
+                    miniMapCameraTransform.position = vehicleTransform.position + cameraFromPlayerOffset;
+                }
+                else {
+                    Debug.LogWarning("Vehicle.Transform value is Null");
+                }
             }
         }
         else
