@@ -9,6 +9,7 @@ public class CarHealth : MonoBehaviour {
 	[SerializeField] int damage;
 	[SerializeField] int burningThresholdHealth = 60;
 	private PlayerStats _playerStats;
+	public AudioSource explode;
 
 	private void Awake() {
 		health = maxHealth;
@@ -19,8 +20,8 @@ public class CarHealth : MonoBehaviour {
 	private void LateUpdate()
 	{
 		if (health <= 0) {
-			Destroy(this.gameObject);
 			CarExplodes();
+			Destroy(this.gameObject);
 		}
 	}
 
@@ -47,12 +48,11 @@ public class CarHealth : MonoBehaviour {
 
 	void CarExplodes() {
 		Debug.Log("iExploded");
+		explode.Play();
 		if (GetComponent<Vehicle>().PlayerIsInCar())
 		{
 			_playerStats.KillPlayer(gameObject);
 		}
-		//whateverfancysmancystyff.
-		//add Michael Bay...
 	}
 
 	void CarBurns()
