@@ -43,7 +43,7 @@ public class PowerUps : MonoBehaviour
     IEnumerator destroy()
     {
         yield return new WaitForSeconds(5);
-        Debug.Log("");
+        Debug.Log("Pick up destroyed");
         Destroy(this);
         Destroy(this.gameObject);
     }
