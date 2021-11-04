@@ -18,9 +18,9 @@ public class PlayerDamage : MonoBehaviour
             _playerStats.KillPlayer(gameObject);
         }
 
-        // if (other.gameObject.CompareTag("Vehicle"))
-        // {
-        //     _playerStats.TakeDamage(50, gameObject);
-        // }    
+        if (other.gameObject.CompareTag("DullVehicle"))
+        {
+            _playerStats.TakeDamage(30, gameObject);
+        }    
     }
 }
