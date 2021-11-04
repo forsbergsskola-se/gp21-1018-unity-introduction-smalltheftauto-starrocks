@@ -1314,7 +1314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edabfa11178a95e43bcee7441a337947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fire: {fileID: 145712, guid: 3a6d4a33d6c582e46964166704ff2b43, type: 3}
+  fire: {fileID: 145712, guid: 3a6d4a33d6c582e46964166704ff2b43, type: 3}
 --- !u!54 &6687020878087206963
 Rigidbody:
   m_ObjectHideFlags: 0
