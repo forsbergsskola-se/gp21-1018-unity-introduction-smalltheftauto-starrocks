@@ -1,8 +1,12 @@
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerStatsLoader))]
+
+    
 public class PlayerDamage : MonoBehaviour
 {
+    [SerializeField] private int dmgAmount;
+
     private PlayerStats _playerStats;
     
     private void Awake()
@@ -20,7 +24,7 @@ public class PlayerDamage : MonoBehaviour
 
         if (other.gameObject.CompareTag("DullVehicle"))
         {
-            _playerStats.TakeDamage(30, gameObject);
+            _playerStats.TakeDamage(dmgAmount, gameObject);
         }    
     }
 }
