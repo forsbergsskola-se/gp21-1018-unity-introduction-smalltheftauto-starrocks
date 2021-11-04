@@ -1,10 +1,7 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerStatsLoader))]
-
-    
+ 
 public class PlayerDamage : MonoBehaviour
 {
     [SerializeField] private int dmgAmount;

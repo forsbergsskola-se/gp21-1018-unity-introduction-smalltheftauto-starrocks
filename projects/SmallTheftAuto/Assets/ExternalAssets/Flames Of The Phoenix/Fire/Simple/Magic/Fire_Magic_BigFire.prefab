@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 19818950}
   - component: {fileID: 19977700}
   - component: {fileID: 8495654867051564344}
+  - component: {fileID: -2636485141502900143}
   m_Layer: 0
   m_Name: Fire_Magic_BigFire
   m_TagString: Fire
@@ -4709,3 +4710,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.9030075, y: 5.836302, z: 6.9124894}
   m_Center: {x: -0.24351741, y: 0.02063904, z: 0.8621552}
+--- !u!114 &-2636485141502900143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47c46011f63618446af425880178b755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 10
