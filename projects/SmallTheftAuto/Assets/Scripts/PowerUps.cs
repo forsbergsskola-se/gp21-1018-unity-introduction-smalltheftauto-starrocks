@@ -9,16 +9,20 @@ public class PowerUps : MonoBehaviour
     [SerializeField]private bool isMoney;
     [SerializeField]private bool isHealth;
     [SerializeField]private int amount;
+    [SerializeField]private GameObject powerUpSprite;
+    private BoxCollider boxCollider;
 
     public AudioSource healthSound;
 
     private void Awake()
     {
         _playerStats = GetComponent<PlayerStatsLoader>().playerStats;
+        BoxCollider boxCollider = GetComponent<BoxCollider>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        if(!CompareTag("Player")) return;
         if (isMoney)
         {
             _playerStats.Money += amount;
@@ -29,6 +33,15 @@ public class PowerUps : MonoBehaviour
             _playerStats.Health += amount;
         }
         healthSound.Play();
-        this.gameObject.SetActive(false);
+        boxCollider.enabled = false;
+        powerUpSprite.SetActive(false);
+        destroy();
+    }
+
+    IEnumerator destroy()
+    {
+        yield return new WaitForSeconds(5);
+        Debug.Log("");
+        Destroy(this);
     }
 }
