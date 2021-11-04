@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1429959929}
   - component: {fileID: 1542817486737094174}
   - component: {fileID: 2725824019414217543}
+  - component: {fileID: 6664485942498274669}
   m_Layer: 8
   m_Name: TrafficCar
   m_TagString: DullVehicle
@@ -106,6 +107,19 @@ MonoBehaviour:
   health: 100
   maxHealth: 100
   damage: 60
+--- !u!114 &6664485942498274669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028715793325883922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edabfa11178a95e43bcee7441a337947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fire: {fileID: 145712, guid: 3a6d4a33d6c582e46964166704ff2b43, type: 3}
 --- !u!1001 &4699837316480102956
 PrefabInstance:
   m_ObjectHideFlags: 0

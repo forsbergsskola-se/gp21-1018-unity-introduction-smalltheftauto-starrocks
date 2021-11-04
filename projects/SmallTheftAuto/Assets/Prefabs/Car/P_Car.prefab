@@ -1268,7 +1268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f91d23aec3b98849ae2948a16456f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 15
+  moveSpeed: 35
   rotateSpeed: 45
 --- !u!114 &6687020878087206964
 MonoBehaviour:
@@ -1282,7 +1282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc24f9565090054993ef3b4941dea36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 4047925843763969255, guid: 6fcd7e8f216b4c04a915d2dd193f6104, type: 3}
+  player: {fileID: 0}
   carMovement: {fileID: 6687020878087206966}
   minDistance: 8
 --- !u!114 &6687020878087206965
@@ -1314,7 +1314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edabfa11178a95e43bcee7441a337947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fire: {fileID: 0}
+  _fire: {fileID: 145712, guid: 3a6d4a33d6c582e46964166704ff2b43, type: 3}
 --- !u!54 &6687020878087206963
 Rigidbody:
   m_ObjectHideFlags: 0
