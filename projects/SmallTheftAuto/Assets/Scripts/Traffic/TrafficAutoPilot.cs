@@ -9,7 +9,7 @@ public class TrafficAutoPilot : MonoBehaviour
 
     public Vector3 Destination
     {
-        get => new Vector3(_destination.x, transform.position.y, _destination.z);
+        get => new Vector3(_destination.x, 42.547f, _destination.z);
         set => _destination = value;
     }
 
