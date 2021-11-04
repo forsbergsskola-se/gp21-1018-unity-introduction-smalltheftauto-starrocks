@@ -12,7 +12,7 @@ public class SavePoint : MonoBehaviour
 
     private void Awake()
     {
-        _playerStats = GetComponent<PlayerStats>();
+        _playerStats = GetComponent<PlayerStatsLoader>().playerStats;
         boxCollider = GetComponent<BoxCollider>();
     }
 
@@ -21,6 +21,7 @@ public class SavePoint : MonoBehaviour
         if(!other.CompareTag("Player")) return;
         DisableBoxCollider();
         SaveSystem.SavePlayer(_playerStats);
+        Debug.Log("Game Saved");
     }
 
     IEnumerator DisableBoxCollider()
