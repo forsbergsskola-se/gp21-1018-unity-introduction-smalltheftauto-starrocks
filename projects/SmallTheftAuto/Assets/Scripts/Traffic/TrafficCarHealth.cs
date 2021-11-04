@@ -7,6 +7,8 @@ public class TrafficCarHealth : MonoBehaviour
     [SerializeField] protected int health;
     [SerializeField] protected int maxHealth;
     [SerializeField] protected int damage;
+
+    public int Health => health;
     
     private protected PlayerStats _playerStats;
     

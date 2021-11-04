@@ -11,6 +11,8 @@ public class CarHealth : MonoBehaviour {
 	private PlayerStats _playerStats;
 	public AudioSource explode;
 
+	public int Health => health;
+	
 	private void Awake() {
 		health = maxHealth;
 		_playerStats = GetComponent<PlayerStatsLoader>().playerStats;
