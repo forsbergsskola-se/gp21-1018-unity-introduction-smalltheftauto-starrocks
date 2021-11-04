@@ -9,14 +9,12 @@ public class CarHealth : MonoBehaviour {
 	[SerializeField] int damage;
 	[SerializeField] int burningThresholdHealth = 60;
 	private PlayerStats _playerStats;
-	public AudioSource explode;
 
 	public int Health => health;
 	
 	private void Awake() {
 		health = maxHealth;
 		_playerStats = GetComponent<PlayerStatsLoader>().playerStats;
-		// _playerStats.InitializePlayerStats();
 	}
 
 	private void LateUpdate()
@@ -50,7 +48,6 @@ public class CarHealth : MonoBehaviour {
 
 	void CarExplodes() {
 		Debug.Log("iExploded");
-		explode.Play();
 		if (GetComponent<Vehicle>().PlayerIsInCar())
 		{
 			_playerStats.KillPlayer(gameObject);
