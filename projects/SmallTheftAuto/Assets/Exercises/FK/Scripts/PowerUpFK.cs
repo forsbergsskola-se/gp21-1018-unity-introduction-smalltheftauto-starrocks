@@ -17,7 +17,6 @@ public class PowerUpFK : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Has Collided"); //TODO: REMOVE
         if (isMoney)
         {
             _playerStats.Money += amount;
