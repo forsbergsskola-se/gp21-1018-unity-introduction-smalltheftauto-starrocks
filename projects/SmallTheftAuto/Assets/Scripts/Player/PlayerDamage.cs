@@ -1,3 +1,5 @@
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerStatsLoader))]
@@ -26,5 +28,13 @@ public class PlayerDamage : MonoBehaviour
         {
             _playerStats.TakeDamage(dmgAmount, gameObject);
         }    
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Fire"))
+        {
+            _playerStats.TakeDamage(dmgAmount, gameObject);
+        }
     }
 }
