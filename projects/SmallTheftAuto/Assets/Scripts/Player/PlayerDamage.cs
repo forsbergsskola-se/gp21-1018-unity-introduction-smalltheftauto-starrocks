@@ -32,9 +32,6 @@ public class PlayerDamage : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Fire"))
-        {
-            _playerStats.TakeDamage(dmgAmount, gameObject);
-        }
+        if (other.gameObject.CompareTag("Fire")) _playerStats.TakeDamage(dmgAmount, gameObject);
     }
 }
