@@ -9,8 +9,11 @@ public class Weapon : MonoBehaviour
     [SerializeField] private float reloadTime;
     
     private float _timeRemaing;
+
+    public GameObject reloadWarning;
     
-    public AudioSource fire;
+    public AudioSource fireSound;
+    public AudioSource reloadSound;
 
     private void Awake()
     {
@@ -27,11 +30,12 @@ public class Weapon : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space)) StartFiring();
             if (Input.GetKeyUp(KeyCode.Space)) StopFiring();
             
-            if (fire.isPlaying) _timeRemaing -= Time.deltaTime;
+            if (fireSound.isPlaying) _timeRemaing -= Time.deltaTime;
         }
         else
         {
             StopFiring();
+            reloadWarning.SetActive(true);
             if (Input.GetKeyDown(KeyCode.R)) ReloadWeapon();
         }
 
@@ -41,17 +45,19 @@ public class Weapon : MonoBehaviour
     private void ReloadWeapon()
     {
         _timeRemaing = reloadTime;
+        reloadSound.Play();
+        reloadWarning.SetActive(false);
     }
 
     private void StartFiring()
     {
         particleSystem.Play();
-        fire.Play();
+        fireSound.Play();
     }
 
     private void StopFiring()
     {
         particleSystem.Stop();
-        fire.Stop();
+        fireSound.Stop();
     }
 }
