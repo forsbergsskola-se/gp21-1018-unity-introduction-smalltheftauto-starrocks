@@ -17,7 +17,7 @@ public class Weapon : MonoBehaviour
         particleSystem = GetComponent<ParticleSystem>();
         particleSystem.Stop();
 
-        _timeRemaing = reloadTime;
+        ReloadWeapon();
     }
 
     private void Update()
@@ -32,9 +32,15 @@ public class Weapon : MonoBehaviour
         else
         {
             StopFiring();
+            if (Input.GetKeyDown(KeyCode.R)) ReloadWeapon();
         }
 
         Debug.Log(_timeRemaing);
+    }
+
+    private void ReloadWeapon()
+    {
+        _timeRemaing = reloadTime;
     }
 
     private void StartFiring()
