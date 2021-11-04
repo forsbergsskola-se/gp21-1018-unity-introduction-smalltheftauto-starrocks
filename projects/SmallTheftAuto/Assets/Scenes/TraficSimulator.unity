@@ -15566,6 +15566,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1360214524079973501, guid: 7b1b007e77b4ec041aec33d609e1dc7d, type: 3}
   m_PrefabInstance: {fileID: 382137256}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &382698995 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2310581019265597916, guid: e493fc4bc44faf94999b581770bdeab0, type: 3}
+  m_PrefabInstance: {fileID: 1760203698678791768}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &385219950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37331,6 +37336,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7431236570398947203, guid: 14c0b9f78682cf142b67d0b3e384529d, type: 3}
   m_PrefabInstance: {fileID: 1391251835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &846432093 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2310581018441446959, guid: e493fc4bc44faf94999b581770bdeab0, type: 3}
+  m_PrefabInstance: {fileID: 1760203698678791768}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &847376623
 PrefabInstance:
@@ -94177,6 +94187,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1962869262525103998, guid: e493fc4bc44faf94999b581770bdeab0, type: 3}
+      propertyPath: routes.Array.data[0]
+      value: 
+      objectReference: {fileID: 846432093}
+    - target: {fileID: 1962869263233192623, guid: e493fc4bc44faf94999b581770bdeab0, type: 3}
+      propertyPath: routes.Array.data[0]
+      value: 
+      objectReference: {fileID: 382698995}
     - target: {fileID: 6108069954289828159, guid: e493fc4bc44faf94999b581770bdeab0, type: 3}
       propertyPath: m_Name
       value: TrafficSystem
