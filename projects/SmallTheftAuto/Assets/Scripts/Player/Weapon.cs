@@ -38,8 +38,6 @@ public class Weapon : MonoBehaviour
             reloadWarning.SetActive(true);
             if (Input.GetKeyDown(KeyCode.R)) ReloadWeapon();
         }
-
-        Debug.Log(_timeRemaing);
     }
 
     private void ReloadWeapon()
