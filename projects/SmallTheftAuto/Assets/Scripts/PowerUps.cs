@@ -9,9 +9,7 @@ public class PowerUps : MonoBehaviour
     [SerializeField]private bool isMoney;
     [SerializeField]private bool isHealth;
     [SerializeField]private int amount;
-
-    public AudioSource healthSound;
-
+    
     private void Awake()
     {
         _playerStats = GetComponent<PlayerStatsLoader>().playerStats;
@@ -28,7 +26,6 @@ public class PowerUps : MonoBehaviour
         {
             _playerStats.Health += amount;
         }
-        healthSound.Play();
-        this.gameObject.SetActive(false);
+        Destroy(this.gameObject);
     }
 }
