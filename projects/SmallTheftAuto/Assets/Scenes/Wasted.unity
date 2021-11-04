@@ -308,5 +308,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wasted
       objectReference: {fileID: 0}
+    - target: {fileID: 3848665537234046019, guid: 3cf41c2495cd24c4f8a59c1a0da7a3d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: doExitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 3848665537234046019, guid: 3cf41c2495cd24c4f8a59c1a0da7a3d7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuitGame, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cf41c2495cd24c4f8a59c1a0da7a3d7, type: 3}
