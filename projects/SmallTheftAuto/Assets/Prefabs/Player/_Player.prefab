@@ -4985,10 +4985,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particleSystem: {fileID: 346389982}
-  reloadTime: 3
+  reloadTime: 2.5
   reloadWarning: {fileID: 0}
-  fireSound: {fileID: 0}
-  reloadSound: {fileID: 0}
+  fireSound: {fileID: 956532894}
+  reloadSound: {fileID: 9174402030046716420}
 --- !u!82 &956532894
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10458,6 +10458,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &5611497044804391851
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492040547230893317}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8003795, y: 4.5435925, z: 1}
+  m_Center: {x: -0.05337779, y: 1.7717956, z: 0}
 --- !u!1 &4047925843763969255
 GameObject:
   m_ObjectHideFlags: 0
@@ -10470,13 +10483,12 @@ GameObject:
   - component: {fileID: 5768273155743924413}
   - component: {fileID: 7148908703772746789}
   - component: {fileID: -7879701921285098742}
-  - component: {fileID: 117069520918687647}
   - component: {fileID: 1918001108}
   - component: {fileID: 1918001112}
   - component: {fileID: 1918001114}
   m_Layer: 0
   m_Name: _Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10548,19 +10560,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
---- !u!65 &117069520918687647
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4047925843763969255}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1.9472704, y: 1, z: 1.4104838}
-  m_Center: {x: 0.010525227, y: 0, z: 0.09998965}
 --- !u!114 &1918001108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10660,11 +10659,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: STA_Project_Character_1_V1@T-Pose
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b3996d6cc153ce44bda5f52a13569ea, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5866666021909216657, guid: 9b3996d6cc153ce44bda5f52a13569ea, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9b3996d6cc153ce44bda5f52a13569ea, type: 3}
 --- !u!4 &2305590483971022783 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9b3996d6cc153ce44bda5f52a13569ea, type: 3}
+  m_PrefabInstance: {fileID: 1762494226146293844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1492040547230893317 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b3996d6cc153ce44bda5f52a13569ea, type: 3}
   m_PrefabInstance: {fileID: 1762494226146293844}
   m_PrefabAsset: {fileID: 0}
