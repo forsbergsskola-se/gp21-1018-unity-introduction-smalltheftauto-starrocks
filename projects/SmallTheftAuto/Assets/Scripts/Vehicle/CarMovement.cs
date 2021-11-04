@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CarMovement : MonoBehaviour
 {
-    [SerializeField][Range(1f, 20f)]float moveSpeed = 10f;
+    [SerializeField][Range(1f, 200f)]float moveSpeed = 10f;
     [SerializeField][Range(0f, 360f)]float rotateSpeed;
     void Update()
     {
