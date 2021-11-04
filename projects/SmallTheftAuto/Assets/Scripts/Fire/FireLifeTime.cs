@@ -14,8 +14,7 @@ public class FireLifeTime : MonoBehaviour
     private void Update()
     {
         _elapsedTime += Time.deltaTime;
-        Debug.Log(_elapsedTime);
-        
+      
         if(lifeTime < _elapsedTime) gameObject.SetActive(false);
     }
 }
