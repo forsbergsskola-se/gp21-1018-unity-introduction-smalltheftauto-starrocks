@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8893067573921743109}
   - component: {fileID: 1962575260498135580}
   - component: {fileID: 1429959929}
+  - component: {fileID: 1542817486737094174}
+  - component: {fileID: 2725824019414217543}
   m_Layer: 8
   m_Name: TrafficCar
   m_TagString: DullVehicle
@@ -76,6 +78,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+--- !u!114 &1542817486737094174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028715793325883922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a78e3b11971bf904cab6c0a012ffda70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 11400000, guid: 3945224d9736a2a479d894cb6785901b, type: 2}
+--- !u!114 &2725824019414217543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028715793325883922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc17dcd389984bb408789e5beca5cb58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
+  damage: 60
 --- !u!1001 &4699837316480102956
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Stats
   m_EditorClassIdentifier: 
   health: 100
-  money: 15882
-  score: 1805
+  money: 124
+  score: 0
   minHealth: 0
   maxHealth: 100
-  wasted: {fileID: 7631596206328269103, guid: 474c29d15c141424c866ea4a8a5beccc, type: 3}
