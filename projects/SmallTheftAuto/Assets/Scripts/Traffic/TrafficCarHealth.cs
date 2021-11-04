@@ -4,11 +4,11 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerStatsLoader))]
 public class TrafficCarHealth : MonoBehaviour
 {
-    [SerializeField] int health;
-    [SerializeField] int maxHealth;
-    [SerializeField] int damage;
+    [SerializeField] protected int health;
+    [SerializeField] protected int maxHealth;
+    [SerializeField] protected int damage;
     
-    private PlayerStats _playerStats;
+    private protected PlayerStats _playerStats;
     
     private void Awake()
     {

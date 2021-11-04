@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8893067573921743109}
   - component: {fileID: 1962575260498135580}
   - component: {fileID: 1429959929}
+  - component: {fileID: -8085257908215960684}
+  - component: {fileID: -1947989744634859167}
   m_Layer: 8
   m_Name: Pedestrian
   m_TagString: DullVehicle
@@ -78,6 +80,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
+--- !u!114 &-8085257908215960684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028715793325883922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a78e3b11971bf904cab6c0a012ffda70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 11400000, guid: 3945224d9736a2a479d894cb6785901b, type: 2}
+--- !u!114 &-1947989744634859167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028715793325883922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ee0e0b56c719df458be5d00fdc61c2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 60
+  maxHealth: 60
+  damage: 30
 --- !u!1 &2763025431410088385
 GameObject:
   m_ObjectHideFlags: 0

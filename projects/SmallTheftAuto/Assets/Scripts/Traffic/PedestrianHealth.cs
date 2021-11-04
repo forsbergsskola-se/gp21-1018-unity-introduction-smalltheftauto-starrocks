@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class PedestrianHealth : MonoBehaviour
+public class PedestrianHealth : TrafficCarHealth
 {
-    // Start is called before the first frame update
-    void Start()
+    private void LateUpdate()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+            _playerStats.Money += damage;
+        }
     }
 }
