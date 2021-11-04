@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerUp : MonoBehaviour
+public class PowerUps : MonoBehaviour
 {
     private PlayerStats _playerStats;
     [SerializeField]private bool isMoney;
