@@ -9,11 +9,15 @@ public class PowerUps : MonoBehaviour
     [SerializeField]private bool isMoney;
     [SerializeField]private bool isHealth;
     [SerializeField]private int amount;
+<<<<<<< HEAD
     [SerializeField]private GameObject powerUpSprite;
     private BoxCollider boxCollider;
 
     public AudioSource healthSound;
 
+=======
+    
+>>>>>>> 1b4d042e389cee4b218e7af6bbf7c587cfa10c87
     private void Awake()
     {
         _playerStats = GetComponent<PlayerStatsLoader>().playerStats;
@@ -32,6 +36,7 @@ public class PowerUps : MonoBehaviour
         {
             _playerStats.Health += amount;
         }
+<<<<<<< HEAD
         healthSound.Play();
         boxCollider.enabled = false;
         powerUpSprite.SetActive(false);
@@ -43,5 +48,8 @@ public class PowerUps : MonoBehaviour
         yield return new WaitForSeconds(5);
         Debug.Log("");
         Destroy(this);
+=======
+        Destroy(this.gameObject);
+>>>>>>> 1b4d042e389cee4b218e7af6bbf7c587cfa10c87
     }
 }
