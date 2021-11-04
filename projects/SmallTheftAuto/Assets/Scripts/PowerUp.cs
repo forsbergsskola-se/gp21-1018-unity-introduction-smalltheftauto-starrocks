@@ -10,7 +10,7 @@ public class PowerUp : MonoBehaviour
     [SerializeField]private bool isHealth;
     [SerializeField]private int amount;
 
-    public static AudioClip healthSound;
+    public AudioSource healthSound;
 
     private void Awake()
     {
@@ -28,6 +28,7 @@ public class PowerUp : MonoBehaviour
         {
             _playerStats.Health += amount;
         }
-        Destroy(this.gameObject);
+        healthSound.Play();
+        this.gameObject.SetActive(false);
     }
 }
