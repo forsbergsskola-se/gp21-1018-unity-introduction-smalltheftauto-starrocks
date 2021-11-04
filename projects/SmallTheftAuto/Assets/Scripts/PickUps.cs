@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 
-public class PowerUps : MonoBehaviour
+public class PickUps : MonoBehaviour
 {
     private PlayerStats _playerStats;
     [SerializeField]private bool isMoney;
@@ -25,7 +25,7 @@ public class PowerUps : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("DullVehicle")) return;
+        if (!other.CompareTag("Player")) return;
         if (isMoney)
         {
             _playerStats.Money += amount;
@@ -33,6 +33,7 @@ public class PowerUps : MonoBehaviour
 
         if (isHealth)
         {
+            if (_playerStats.Health == 100) return;
             _playerStats.Health += amount;
         }
         healthSound.Play();
