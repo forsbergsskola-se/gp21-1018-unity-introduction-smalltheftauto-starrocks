@@ -20,7 +20,7 @@ public class SavePoint : MonoBehaviour
     {
         if(!other.CompareTag("Player")) return;
         DisableBoxCollider();
-        //Save playerstats to text file
+        SaveSystem.SavePlayer(_playerStats);
     }
 
     IEnumerator DisableBoxCollider()
