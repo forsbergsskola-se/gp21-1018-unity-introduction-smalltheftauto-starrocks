@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] ParticleSystem particleSystem;
+    [SerializeField]
+    new ParticleSystem particleSystem;
     [SerializeField] private float reloadTime;
     
     private float _timeRemaing;

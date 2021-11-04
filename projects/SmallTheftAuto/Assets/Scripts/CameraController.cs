@@ -20,13 +20,24 @@ public class CameraController : MonoBehaviour {
     }
 
     void CameraFollowing() {
-	    if (player.gameObject.activeInHierarchy) {
-		    Vector3 targetPosition = player.position + offset;
-		    transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+	    if (player != null) {
+
+		    if (player.gameObject.activeInHierarchy) {
+			    Vector3 targetPosition = player.position + offset;
+			    transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+		    }
+		    else if (!player.gameObject.activeInHierarchy) {
+			    if (vehicle != null) {
+				    Vector3 targetPosition = vehicle.GetChild(0).position + offset;
+				    transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+			    }
+			    else {
+				    Debug.LogWarning("Vehicle is Null");
+			    }
+		    }
 	    }
-	    else if (!player.gameObject.activeInHierarchy) {
-		    Vector3 targetPosition = vehicle.GetChild(0).position + offset;
-		    transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+	    else {
+		    Debug.LogWarning("Player is Null");
 	    }
     }
 }
