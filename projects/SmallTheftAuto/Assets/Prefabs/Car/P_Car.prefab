@@ -1226,6 +1226,7 @@ GameObject:
   - component: {fileID: 6687020878087206966}
   - component: {fileID: 6687020878087206964}
   - component: {fileID: 6687020878087206965}
+  - component: {fileID: 5324238107651870818}
   - component: {fileID: 6687020878087206963}
   - component: {fileID: 6687020878087206962}
   - component: {fileID: 8979098923020809940}
@@ -1301,6 +1302,19 @@ MonoBehaviour:
   damage: 40
   burningThresholdHealth: 50
   explode: {fileID: 8979098923020809940}
+--- !u!114 &5324238107651870818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6687020878087206921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edabfa11178a95e43bcee7441a337947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fire: {fileID: 0}
 --- !u!54 &6687020878087206963
 Rigidbody:
   m_ObjectHideFlags: 0
