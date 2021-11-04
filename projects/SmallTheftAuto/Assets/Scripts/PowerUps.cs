@@ -20,7 +20,7 @@ public class PowerUps : MonoBehaviour
     private void Awake()
     {
         _playerStats = GetComponent<PlayerStatsLoader>().playerStats;
-        BoxCollider boxCollider = GetComponent<BoxCollider>();
+        boxCollider = GetComponent<BoxCollider>();
     }
 
     private void OnTriggerEnter(Collider other)
