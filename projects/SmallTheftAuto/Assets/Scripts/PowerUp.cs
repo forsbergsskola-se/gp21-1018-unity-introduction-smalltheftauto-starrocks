@@ -3,12 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerUpFK : MonoBehaviour
+public class PowerUp : MonoBehaviour
 {
     private PlayerStats _playerStats;
     [SerializeField]private bool isMoney;
     [SerializeField]private bool isHealth;
     [SerializeField]private int amount;
+
+    public static AudioClip healthSound;
 
     private void Awake()
     {
