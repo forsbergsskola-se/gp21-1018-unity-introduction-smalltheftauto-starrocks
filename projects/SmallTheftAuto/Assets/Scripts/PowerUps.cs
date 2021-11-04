@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 
 public class PowerUps : MonoBehaviour
@@ -23,7 +25,7 @@ public class PowerUps : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(!CompareTag("Player")) return;
+        if (other.CompareTag("DullVehicle")) return;
         if (isMoney)
         {
             _playerStats.Money += amount;
@@ -33,7 +35,6 @@ public class PowerUps : MonoBehaviour
         {
             _playerStats.Health += amount;
         }
-
         healthSound.Play();
         boxCollider.enabled = false;
         powerUpSprite.SetActive(false);
