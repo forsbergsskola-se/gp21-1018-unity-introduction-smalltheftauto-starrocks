@@ -6,28 +6,46 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] ParticleSystem particleSystem;
-    private float counter;
+    [SerializeField] private float reloadTime;
+    
+    private float _timeRemaing;
+    
     public AudioSource fire;
 
     private void Awake()
     {
         particleSystem = GetComponent<ParticleSystem>();
         particleSystem.Stop();
+
+        _timeRemaing = reloadTime;
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (_timeRemaing > 0)
         {
-            particleSystem.Play();
-            fire.Play();
+            if (Input.GetKeyDown(KeyCode.Space)) StartFiring();
+            if (Input.GetKeyUp(KeyCode.Space)) StopFiring();
+            
+            if (fire.isPlaying) _timeRemaing -= Time.deltaTime;
+        }
+        else
+        {
+            StopFiring();
         }
 
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            particleSystem.Stop();
-            fire.Stop();
-        }
+        Debug.Log(_timeRemaing);
     }
 
+    private void StartFiring()
+    {
+        particleSystem.Play();
+        fire.Play();
+    }
+
+    private void StopFiring()
+    {
+        particleSystem.Stop();
+        fire.Stop();
+    }
 }
