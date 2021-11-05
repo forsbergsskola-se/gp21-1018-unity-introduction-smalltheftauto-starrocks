@@ -20,7 +20,7 @@ public class SavePoint : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(!other.CompareTag("Player")) return;
-        DisableBoxCollider();
+        StartCoroutine(DisableBoxCollider());
         SaveSystem.SavePlayer(_playerStats);
         Debug.Log("Game Saved");
         gameSavedUi.SetActive(true);
