@@ -11,6 +11,7 @@ TagManager:
   - Body
   - DullVehicle
   - Fire
+  - PlayerVehicle
   layers:
   - Default
   - TransparentFX

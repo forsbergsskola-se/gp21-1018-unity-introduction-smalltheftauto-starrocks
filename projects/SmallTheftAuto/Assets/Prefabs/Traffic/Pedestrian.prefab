@@ -107,7 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 60
   maxHealth: 60
-  damage: 30
+  damage: 34
 --- !u!1 &2763025431410088385
 GameObject:
   m_ObjectHideFlags: 0
