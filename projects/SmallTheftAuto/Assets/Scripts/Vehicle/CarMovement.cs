@@ -22,7 +22,6 @@ public class CarMovement : MonoBehaviour
     void CarMove()
     {
         _rigidbody.AddRelativeForce(0f,0f,moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"));
-        //transform.Translate(0f, 0f,moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"));
         transform.Rotate(0f,rotateSpeed * Time.deltaTime * Input.GetAxis("Horizontal"), 0f);
     }
 }
