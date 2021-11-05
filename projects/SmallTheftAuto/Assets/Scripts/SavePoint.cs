@@ -23,16 +23,15 @@ public class SavePoint : MonoBehaviour
         StartCoroutine(DisableBoxCollider());
         SaveSystem.SavePlayer(_playerStats);
         Debug.Log("Game Saved");
-        gameSavedUi.SetActive(true);
     }
 
     IEnumerator DisableBoxCollider()
     {
+        gameSavedUi.SetActive(true);
         boxCollider.enabled = false;
         yield return new WaitForSeconds(5);
         boxCollider.enabled = true;
-    }
-    private void OnTriggerExit(Collider other) {
         gameSavedUi.SetActive(false);
+
     }
 }
