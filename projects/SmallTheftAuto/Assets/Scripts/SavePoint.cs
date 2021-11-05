@@ -9,7 +9,7 @@ public class SavePoint : MonoBehaviour
 {
     private PlayerStats _playerStats;
     private BoxCollider boxCollider;
-    public GameObject gameSaved;
+    public GameObject gameSavedUi;
 
     private void Awake()
     {
@@ -23,7 +23,7 @@ public class SavePoint : MonoBehaviour
         DisableBoxCollider();
         SaveSystem.SavePlayer(_playerStats);
         Debug.Log("Game Saved");
-        gameSaved.SetActive(true);
+        gameSavedUi.SetActive(true);
     }
 
     IEnumerator DisableBoxCollider()
@@ -33,6 +33,6 @@ public class SavePoint : MonoBehaviour
         boxCollider.enabled = true;
     }
     private void OnTriggerExit(Collider other) {
-        gameSaved.SetActive(false);
+        gameSavedUi.SetActive(false);
     }
 }
