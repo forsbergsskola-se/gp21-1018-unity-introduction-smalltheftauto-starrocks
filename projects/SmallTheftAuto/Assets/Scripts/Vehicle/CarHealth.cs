@@ -6,8 +6,7 @@ using UnityEngine;
 public class CarHealth : MonoBehaviour {
 	[SerializeField] int health;
 	[SerializeField] int maxHealth;
-	[SerializeField] int wallDamage;
-	[SerializeField] int vehicleDamage;
+	[SerializeField] int damage;
 	[SerializeField] int burningThresholdHealth = 60;
 	private PlayerStats _playerStats;
 
@@ -27,12 +26,8 @@ public class CarHealth : MonoBehaviour {
 	}
 
 	private void OnCollisionEnter(Collision other) {
-		if (other.gameObject.CompareTag("Wall")) {
-			TakeDamage(wallDamage);
-			CarBurns();
-		}
-		else if (other.gameObject.CompareTag("Vehicle")) {
-			TakeDamage(vehicleDamage);
+		if (other.gameObject.CompareTag("Vehicle") || other.gameObject.CompareTag("Wall")) {
+			TakeDamage(damage);
 			CarBurns();
 		}
 		else if (other.gameObject.CompareTag("Water")) {
@@ -43,7 +38,7 @@ public class CarHealth : MonoBehaviour {
 
 	private void OnParticleCollision(GameObject other)
 	{
-		TakeDamage(vehicleDamage);
+		TakeDamage(damage);
 	}
 
 	public void TakeDamage(int damage) {
