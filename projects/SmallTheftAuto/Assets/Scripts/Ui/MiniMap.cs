@@ -17,6 +17,9 @@ public class MiniMap : MonoBehaviour
         cameraFromPlayerOffset = new Vector3(0, 14, 0);
     }
 
+    //Your code could give a cleaner impression if you all used the same convention for
+    //where to put brackets
+    
     // Update is called once per frame
     void LateUpdate()
     {
