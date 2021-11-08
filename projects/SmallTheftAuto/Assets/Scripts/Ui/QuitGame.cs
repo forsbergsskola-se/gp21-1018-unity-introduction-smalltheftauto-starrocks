@@ -6,7 +6,9 @@ public class QuitGame : MonoBehaviour
 {
     //Method should be named with capital letter :)
     //Agreed /Felix
-    public void doExitGame() {
+    //Seriously WTF Ben. That's some old school code.
+    // /Ben
+    public void ExitGame() {
         Application.Quit();
         Debug.Log("Game Quit");
     }
