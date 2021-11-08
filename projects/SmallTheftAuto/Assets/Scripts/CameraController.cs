@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-
+/// <summary>
+/// nice and simple camera controller with bonus null check, very nice
+/// </summary>
 public class CameraController : MonoBehaviour {
     Vector3 offset;
     [SerializeField]Transform player;

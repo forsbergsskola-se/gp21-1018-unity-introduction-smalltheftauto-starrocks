@@ -27,6 +27,7 @@ public class CarHealth : MonoBehaviour {
 		}
 	}
 
+	//Maybe the building should do wallDamage on the car instead of the car doing it to itself in the same script
 	private void OnCollisionEnter(Collision other) {
 		if (other.gameObject.CompareTag("Wall")) {
 			TakeDamage(wallDamage);

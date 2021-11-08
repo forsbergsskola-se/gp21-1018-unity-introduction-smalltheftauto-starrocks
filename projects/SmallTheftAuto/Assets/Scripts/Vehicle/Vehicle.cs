@@ -5,7 +5,9 @@ public class Vehicle : MonoBehaviour
     public GameObject player;
     public CarMovement carMovement;
     public float minDistance;
-    
+    /// <summary>
+    /// very nice and simple vehicle interaction script, very nice 
+    /// </summary>
     void Update()
     {
         if (Input.GetButtonDown("Interact-Vehicle"))
