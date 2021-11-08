@@ -18,6 +18,8 @@ public class WeaponSwitch : MonoBehaviour
     
     private void Start()
     {
+        // Note:
+        // Consider putting the number 2 in a variable to increase readability and avoid magic number
         counter = 2;
     }
 
@@ -38,8 +40,16 @@ public class WeaponSwitch : MonoBehaviour
 
     private void SwitchWeapon()
     {
-        Weapon currentWeapon = Weapon.Fist;
+        // Note:
+        // Consider using a switch expression, which does the same thing but less code to write. 
+        // Weapon currentWeapon = counter switch
+        // {
+        //     1 => Weapon.MachineGun,
+        //     2 => Weapon.Fist,
+        //     _ => Weapon.Pistol
+        // };
 
+        Weapon currentWeapon = Weapon.Fist;
         switch (counter)
         {
             case 0:
