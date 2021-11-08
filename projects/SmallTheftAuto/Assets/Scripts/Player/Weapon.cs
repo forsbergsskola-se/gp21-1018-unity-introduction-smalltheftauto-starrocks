@@ -40,6 +40,11 @@ public class Weapon : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.R)) ReloadWeapon();
         }
     }
+    
+    /// <summary>
+    /// Method for reloding weapon and disabling reloadWarning
+    /// </summary>
+    /// <returns></returns>
 
     private void ReloadWeapon()
     {
