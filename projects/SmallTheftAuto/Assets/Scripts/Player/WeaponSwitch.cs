@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class WeaponSwitch : MonoBehaviour
 {
+    //I like that you kept your code well separated in small scripts, it's easy to get an overview and
+    //your code is very readable
     enum Weapon
     {
         Pistol = 0,
