@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// TODO: Nice, simple traffic system! :)
 public class WayPointRoutes : MonoBehaviour
 {
     [SerializeField] private Transform[] routes;

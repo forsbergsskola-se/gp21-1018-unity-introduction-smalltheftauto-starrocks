@@ -19,6 +19,7 @@ public class MiniMap : MonoBehaviour
 
     //Your code could give a cleaner impression if you all used the same convention for
     //where to put brackets
+    // TODO: True :)
     
     // Update is called once per frame
     void LateUpdate()

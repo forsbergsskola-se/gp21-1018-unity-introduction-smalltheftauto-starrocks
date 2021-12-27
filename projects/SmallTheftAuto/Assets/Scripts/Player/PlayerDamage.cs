@@ -18,6 +18,7 @@ public class PlayerDamage : MonoBehaviour
         _elapsedTime = timeToTakeDamage;
     }
 
+    // TODO: Looks good, but consider using other.impulse.magnitude to find out, how heavy the player was hit
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Water"))

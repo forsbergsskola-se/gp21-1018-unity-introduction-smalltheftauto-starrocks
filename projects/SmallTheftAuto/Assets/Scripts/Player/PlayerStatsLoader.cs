@@ -9,6 +9,7 @@ public class PlayerStatsLoader : MonoBehaviour
 
     private void Awake()
     {
+        // TODO: h, I see, you are not doing anything with the result here. Too bad.
         SaveSystem.LoadPlayer();
     }
 }

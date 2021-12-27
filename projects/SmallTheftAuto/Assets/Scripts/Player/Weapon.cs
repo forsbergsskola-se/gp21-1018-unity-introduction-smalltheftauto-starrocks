@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    // TODO: Try avoiding the `new` keyword. Rather rename the field.
     [SerializeField]
     new ParticleSystem particleSystem;
     [SerializeField] private float reloadTime;
     
-    private float _timeRemaing;
+    private float _timeRemaing; // TODO: remaining (spelling error)
 
     public GameObject reloadWarning;
     
@@ -26,6 +27,7 @@ public class Weapon : MonoBehaviour
 
     private void Update()
     {
+        // TODO: looks good! :)
         if (_timeRemaing > 0)
         {
             if (Input.GetKeyDown(KeyCode.Space)) StartFiring();

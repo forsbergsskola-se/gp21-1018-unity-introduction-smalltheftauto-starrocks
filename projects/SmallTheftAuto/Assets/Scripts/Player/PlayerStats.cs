@@ -2,6 +2,8 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// TODO: I would recommend splitting these stats into multiple components
+// I think that Money works very independently from Health, or?
 [CreateAssetMenu(menuName = "ScriptableObject/Player/Stats", fileName = "Stats")]
 public class PlayerStats : ScriptableObject
 {

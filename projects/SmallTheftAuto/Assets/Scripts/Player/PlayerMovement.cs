@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     void PlayerMove()
     {
+        // TODO: It surprises me, that this is the Movement Code, because the controls feel very physically, as if moving through space.
         transform.Translate(0f, 0f,moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"));
         transform.Rotate(0f,rotateSpeed * Time.deltaTime * Input.GetAxis("Horizontal"), 0f);
     }

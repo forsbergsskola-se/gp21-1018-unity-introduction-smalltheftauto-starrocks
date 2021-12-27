@@ -14,7 +14,7 @@ public class FireLifeTime : MonoBehaviour
     private void Update()
     {
         _elapsedTime += Time.deltaTime;
-      
+        // TODO: consider destroying the fire, to avoid that there's more and more disabled fires in the game (the longer I play)
         if(lifeTime < _elapsedTime) gameObject.SetActive(false);
     }
 }

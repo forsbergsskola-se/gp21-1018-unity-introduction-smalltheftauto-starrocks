@@ -70,6 +70,12 @@ public class WeaponSwitch : MonoBehaviour
         EquipeWeapon(currentWeapon);
     }
 
+    // TODO: This looks like a bad violation of the open closed principle.
+    // Maybe, you don't need the Enum at all and instead could just do:
+    // In SwitchWeapon:
+    // inventory[currentWeapon].SetActive(false);
+    // currentWeapon = (currentWeapon+1)%numberOfWeapons;
+    // inventory[currentWeapon].SetActive(true);
     private void EquipeWeapon(Weapon weapon)
     {
         for (int i = 0; i < inventory.Length; i++)

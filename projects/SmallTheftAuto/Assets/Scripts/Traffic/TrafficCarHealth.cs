@@ -28,6 +28,7 @@ public class TrafficCarHealth : MonoBehaviour
         }
     }
     
+    // TODO: Sure, that you need to check for ParticleCollision here?
     private void OnParticleCollision(GameObject other)
     {
         TakeDamage(damage);

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 
+// TODO: Nice! :)
 public class TrafficSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject objectToSpawn;
